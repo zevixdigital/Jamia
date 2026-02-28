@@ -1,0 +1,200 @@
+@import url('https://fonts.googleapis.com/css2?family=Amiri:ital,wght@0,400;0,700;1,400;1,700&family=Inter:wght@300;400;500;600;700&family=Noto+Nastaliq+Urdu:wght@400;500;600;700&display=swap');
+
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@layer base {
+  :root {
+    --background: 48 33% 97%;
+    --foreground: 220 13% 15%;
+    --card: 0 0% 100%;
+    --card-foreground: 220 13% 15%;
+    --popover: 0 0% 100%;
+    --popover-foreground: 220 13% 15%;
+    --primary: 160 94% 16%;
+    --primary-foreground: 0 0% 100%;
+    --secondary: 43 89% 44%;
+    --secondary-foreground: 0 0% 100%;
+    --muted: 160 20% 95%;
+    --muted-foreground: 220 9% 46%;
+    --accent: 43 89% 44%;
+    --accent-foreground: 0 0% 100%;
+    --destructive: 0 84.2% 60.2%;
+    --destructive-foreground: 0 0% 98%;
+    --border: 160 20% 88%;
+    --input: 160 20% 88%;
+    --ring: 160 94% 16%;
+    --radius: 0.5rem;
+    
+    --emerald-deep: #064E3B;
+    --emerald-medium: #059669;
+    --emerald-light: #D1FAE5;
+    --gold-primary: #D97706;
+    --gold-light: #FCD34D;
+    --cream: #FDFBF7;
+  }
+}
+
+@layer base {
+  * {
+    @apply border-border;
+  }
+  
+  html {
+    scroll-behavior: smooth;
+  }
+  
+  body {
+    @apply bg-[#FDFBF7] text-foreground font-sans antialiased;
+    font-family: 'Inter', sans-serif;
+  }
+  
+  h1, h2, h3, h4, h5, h6 {
+    font-family: 'Amiri', serif;
+  }
+  
+  .urdu-text {
+    font-family: 'Noto Nastaliq Urdu', serif;
+    line-height: 2;
+  }
+}
+
+@layer components {
+  .islamic-border {
+    position: relative;
+    border: 2px solid var(--gold-primary);
+  }
+  
+  .islamic-border::before,
+  .islamic-border::after {
+    content: '';
+    position: absolute;
+    width: 20px;
+    height: 20px;
+    border: 2px solid var(--gold-primary);
+  }
+  
+  .islamic-border::before {
+    top: -2px;
+    left: -2px;
+    border-right: none;
+    border-bottom: none;
+  }
+  
+  .islamic-border::after {
+    bottom: -2px;
+    right: -2px;
+    border-left: none;
+    border-top: none;
+  }
+  
+  .gold-gradient {
+    background: linear-gradient(135deg, #D97706 0%, #FCD34D 50%, #D97706 100%);
+  }
+  
+  .emerald-gradient {
+    background: linear-gradient(135deg, #064E3B 0%, #059669 100%);
+  }
+  
+  .pattern-bg {
+    background-image: url("data:image/svg+xml,%3Csvg width='60' height='60' viewBox='0 0 60 60' xmlns='http://www.w3.org/2000/svg'%3E%3Cg fill='none' fill-rule='evenodd'%3E%3Cg fill='%23064E3B' fill-opacity='0.03'%3E%3Cpath d='M36 34v-4h-2v4h-4v2h4v4h2v-4h4v-2h-4zm0-30V0h-2v4h-4v2h4v4h2V6h4V4h-4zM6 34v-4H4v4H0v2h4v4h2v-4h4v-2H6zM6 4V0H4v4H0v2h4v4h2V6h4V4H6z'/%3E%3C/g%3E%3C/g%3E%3C/svg%3E");
+  }
+  
+  .hero-overlay {
+    background: linear-gradient(to bottom, rgba(6, 78, 59, 0.7) 0%, rgba(6, 78, 59, 0.4) 50%, rgba(6, 78, 59, 0.8) 100%);
+  }
+  
+  .section-title {
+    @apply text-3xl md:text-4xl font-bold text-[#064E3B] mb-2;
+    font-family: 'Amiri', serif;
+  }
+  
+  .section-subtitle {
+    @apply text-lg text-[#D97706] urdu-text;
+  }
+  
+  .btn-primary {
+    @apply px-6 py-3 bg-[#064E3B] text-white rounded-md font-medium transition-all duration-300;
+  }
+  
+  .btn-primary:hover {
+    @apply bg-[#059669] shadow-lg;
+  }
+  
+  .btn-gold {
+    @apply px-6 py-3 bg-[#D97706] text-white rounded-md font-medium transition-all duration-300;
+  }
+  
+  .btn-gold:hover {
+    @apply bg-[#B45309] shadow-lg;
+  }
+  
+  .card-hover {
+    @apply transition-all duration-300;
+  }
+  
+  .card-hover:hover {
+    @apply transform -translate-y-1 shadow-xl;
+  }
+  
+  .nav-link {
+    @apply text-white/90 hover:text-[#FCD34D] transition-colors duration-200 font-medium;
+  }
+  
+  .nav-link-active {
+    @apply text-[#FCD34D];
+  }
+}
+
+@layer utilities {
+  .text-balance {
+    text-wrap: balance;
+  }
+  
+  .animate-fade-in {
+    animation: fadeIn 0.8s ease-out forwards;
+  }
+  
+  .animate-slide-up {
+    animation: slideUp 0.8s ease-out forwards;
+  }
+  
+  @keyframes fadeIn {
+    from {
+      opacity: 0;
+    }
+    to {
+      opacity: 1;
+    }
+  }
+  
+  @keyframes slideUp {
+    from {
+      opacity: 0;
+      transform: translateY(30px);
+    }
+    to {
+      opacity: 1;
+      transform: translateY(0);
+    }
+  }
+}
+
+/* Custom scrollbar */
+::-webkit-scrollbar {
+  width: 8px;
+}
+
+::-webkit-scrollbar-track {
+  background: #FDFBF7;
+}
+
+::-webkit-scrollbar-thumb {
+  background: #064E3B;
+  border-radius: 4px;
+}
+
+::-webkit-scrollbar-thumb:hover {
+  background: #059669;
+}
