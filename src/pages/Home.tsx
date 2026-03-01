@@ -159,39 +159,74 @@ const Home = () => {
         </div>
       </section>
 
-      {/* Programs Section */}
-      <section className="py-16 bg-cream">
-        <div className="max-w-7xl mx-auto px-4">
-          <div className="text-center mb-12">
-            <p className="section-subtitle mb-2">ہمارے پروگرام</p>
-            <h2 className="section-title">Our Programs</h2>
-            <p className="text-gray-600 max-w-2xl mx-auto mt-4">
-              Our institute offers a wide range of courses, blending traditional Islamic studies 
-              with modern disciplines for holistic education.
-            </p>
+     {/* Programs Section */}
+<section className="py-20 bg-gradient-to-b from-cream to-white relative overflow-hidden">
+  <div className="max-w-7xl mx-auto px-4">
+
+    {/* Section Header */}
+    <div className="text-center mb-16">
+      <p className="text-gold-primary font-urdu text-lg mb-2 tracking-wide">
+        ہمارے پروگرام
+      </p>
+
+      <h2 className="font-serif text-4xl md:text-5xl font-bold text-emerald-deep relative inline-block">
+        Our Programs
+        <span className="block w-20 h-1 bg-gold-primary mx-auto mt-3 rounded-full"></span>
+      </h2>
+
+      <p className="text-gray-600 max-w-2xl mx-auto mt-6 leading-relaxed">
+        Our institute offers a wide range of courses, blending traditional 
+        Islamic studies with modern disciplines for holistic education.
+      </p>
+    </div>
+
+    {/* Programs Grid */}
+    <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-10">
+      {programs.map((program, index) => (
+        <div
+          key={index}
+          className="group relative bg-white rounded-2xl p-8 shadow-lg hover:shadow-2xl transition-all duration-500 transform hover:-translate-y-3 border border-emerald-50"
+        >
+          {/* Gradient Border Effect */}
+          <div className="absolute inset-0 rounded-2xl border-2 border-transparent group-hover:border-gold-primary transition-all duration-500"></div>
+
+          {/* Icon */}
+          <div className="w-16 h-16 bg-emerald-light rounded-xl flex items-center justify-center mb-6 group-hover:bg-emerald-deep transition-all duration-500">
+            <program.icon className="w-8 h-8 text-emerald-deep group-hover:text-white transition-all duration-500" />
           </div>
 
-          <div className="grid grid-cols-1 md:grid-cols-3 gap-8">
-            {programs.map((program, index) => (
-              <div
-                key={index}
-                className="bg-white rounded-lg p-6 shadow-md card-hover islamic-border"
-              >
-                <div className="w-14 h-14 bg-emerald-light rounded-lg flex items-center justify-center mb-4">
-                  <program.icon className="w-7 h-7 text-emerald-deep" />
-                </div>
-                <h3 className="font-serif text-xl font-bold text-emerald-deep mb-1">
-                  {program.title}
-                </h3>
-                <p className="font-urdu text-gold-primary text-sm mb-3">{program.titleUrdu}</p>
-                <p className="text-gray-600 text-sm mb-3">{program.description}</p>
-                <p className="font-urdu text-gray-500 text-xs">{program.descriptionUrdu}</p>
-              </div>
-            ))}
+          {/* Title */}
+          <h3 className="font-serif text-2xl font-bold text-emerald-deep mb-2">
+            {program.title}
+          </h3>
+
+          {/* Urdu Title */}
+          <p className="font-urdu text-gold-primary text-base mb-4">
+            {program.titleUrdu}
+          </p>
+
+          {/* Description */}
+          <p className="text-gray-600 text-sm leading-relaxed mb-4">
+            {program.description}
+          </p>
+
+          {/* Urdu Description */}
+          <p className="font-urdu text-gray-500 text-xs leading-relaxed">
+            {program.descriptionUrdu}
+          </p>
+
+          {/* Learn More Button */}
+          <div className="mt-6">
+            <button className="text-sm font-semibold text-emerald-deep hover:text-gold-primary transition-colors duration-300">
+              Learn More →
+            </button>
           </div>
         </div>
-      </section>
+      ))}
+    </div>
 
+  </div>
+</section>
      {/* About Section */}
 <section className="py-16 bg-white">
   <div className="max-w-7xl mx-auto px-4">
