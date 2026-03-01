@@ -333,7 +333,7 @@ const Home = () => {
       {/* Left Side - Text Content */}
       <div>
         <p className="section-subtitle mb-2">ہمارے بارے میں</p>
-        <h2 className="section-title">Darul Uloom<br />Jamia Razvia Founder & Manager</h2>
+        <h2 className="section-title">Jamia Razvia <br/> Founder & Manager</h2>
         
         <p className="text-gray-600 leading-relaxed mb-4">
           Darul Uloom Jamia Razvia is a leading academic and charitable religious educational 
