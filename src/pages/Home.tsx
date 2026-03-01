@@ -782,7 +782,7 @@ const Home = () => {
           <div className="rounded-2xl overflow-hidden">
             <iframe
               className="w-full h-[300px] md:h-[420px]"
-              src="https://www.youtube.com/embed/YOUR_VIDEO_ID"
+              src="https://youtu.be/CZ34yB7vH_g"
               title="Institution Introduction Video"
               frameBorder="0"
               allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
