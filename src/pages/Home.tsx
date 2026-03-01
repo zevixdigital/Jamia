@@ -685,7 +685,119 @@ const Home = () => {
 </section>
 
 
+{/* Our Philosophy Section - Premium Version */}
+<section className="relative py-28 bg-gradient-to-b from-emerald-50 via-white to-emerald-50 overflow-hidden">
 
+  {/* Soft Decorative Background Glow */}
+  <div className="absolute top-0 left-0 w-72 h-72 bg-gold-primary/10 rounded-full blur-3xl"></div>
+  <div className="absolute bottom-0 right-0 w-96 h-96 bg-emerald-300/20 rounded-full blur-3xl"></div>
+
+  <div className="max-w-7xl mx-auto px-4 relative z-10">
+
+    <div className="grid grid-cols-1 lg:grid-cols-2 gap-20 items-center">
+
+      {/* LEFT SIDE CONTENT */}
+      <div>
+
+        {/* Urdu Title */}
+        <p className="font-urdu text-2xl text-gold-primary mb-3">
+          ہمارا نظریہ
+        </p>
+
+        {/* English Heading */}
+        <h2 className="font-serif text-4xl md:text-5xl font-bold text-emerald-900 leading-tight mb-6">
+          Education <br />
+          <span className="text-gold-primary">Matters</span>
+        </h2>
+
+        <div className="w-20 h-1 bg-gold-primary mb-8"></div>
+
+        {/* English Description */}
+        <p className="text-gray-700 leading-relaxed mb-6 text-lg">
+          Education is a fundamental necessity for the holistic development of individuals. 
+          It shapes the mind, strengthens character, and refines abilities—preparing people 
+          to lead meaningful and impactful lives.
+        </p>
+
+        <p className="text-gray-700 leading-relaxed mb-6">
+          Through the process of <strong>Taalim</strong>, society transfers its knowledge, 
+          skills, and values from one generation to the next. Our institution is committed 
+          to delivering quality education that empowers students to thrive and contribute 
+          positively to the nation.
+        </p>
+
+        {/* Urdu Description */}
+        <p className="font-urdu text-gray-700 leading-relaxed mb-10 text-lg">
+          تعلیم انسان کی ہمہ جہت ترقی کے لیے بنیادی ضرورت ہے۔ یہ ذہن، کردار اور صلاحیتوں 
+          کو سنوارتی ہے اور انسان کو بامقصد اور مؤثر زندگی گزارنے کے قابل بناتی ہے۔ 
+          ہمارے ادارے میں اعلیٰ معیار کی تعلیم فراہم کی جاتی ہے تاکہ طلبہ معاشرے میں 
+          مثبت کردار ادا کر سکیں۔
+        </p>
+
+        {/* Highlight Cards */}
+        <div className="grid sm:grid-cols-2 gap-8">
+
+          <div className="bg-white p-8 rounded-2xl shadow-lg border border-emerald-100 hover:shadow-2xl transition duration-500">
+            <h4 className="text-xl font-bold text-emerald-900 mb-3">
+              Quality Education
+            </h4>
+            <p className="text-gray-600 text-sm">
+              Excellence in learning
+            </p>
+            <p className="font-urdu text-gray-600 text-sm mt-2">
+              معیاری تعلیم
+            </p>
+          </div>
+
+          <div className="bg-white p-8 rounded-2xl shadow-lg border border-emerald-100 hover:shadow-2xl transition duration-500">
+            <h4 className="text-xl font-bold text-emerald-900 mb-3">
+              Holistic Growth
+            </h4>
+            <p className="text-gray-600 text-sm">
+              Complete development
+            </p>
+            <p className="font-urdu text-gray-600 text-sm mt-2">
+              ہمہ جہت ترقی
+            </p>
+          </div>
+
+        </div>
+
+      </div>
+
+      {/* RIGHT SIDE - VIDEO */}
+      <div>
+
+        <div className="bg-white p-4 rounded-3xl shadow-2xl border border-emerald-100">
+
+          <div className="mb-4 text-center">
+            <h3 className="text-xl font-bold text-emerald-900">
+              Watch Our Institutional Overview
+            </h3>
+            <p className="font-urdu text-gray-600 text-sm">
+              ادارے کا تعارفی ویڈیو دیکھیں
+            </p>
+          </div>
+
+          <div className="rounded-2xl overflow-hidden">
+            <iframe
+              className="w-full h-[300px] md:h-[420px]"
+              src="https://www.youtube.com/embed/YOUR_VIDEO_ID"
+              title="Institution Introduction Video"
+              frameBorder="0"
+              allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
+              allowFullScreen
+            ></iframe>
+          </div>
+
+        </div>
+
+      </div>
+
+    </div>
+
+  </div>
+</section>
 
       {/* CTA Section */}
       <section className="py-16 bg-emerald-deep pattern-bg">
