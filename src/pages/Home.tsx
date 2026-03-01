@@ -450,10 +450,10 @@ const Home = () => {
           {/* Overlay */}
           <div className="absolute inset-0 bg-gradient-to-t from-black/80 via-black/40 to-transparent flex flex-col justify-end p-8">
             <h3 className="text-white text-3xl font-bold">
-              Annual Prize Distribution
+               Staff Meeting
             </h3>
             <p className="text-gray-200 mt-2">
-              Madarsa Toppers – Academic Year 2025-26
+                Darul Uloom Jamia Razvia – Academic Planning Session
             </p>
             <a
               href="https://res.cloudinary.com/dadqwaqis/image/upload/v1772386715/WhatsApp_Image_2026-02-26_at_2.44.55_PM_1_gio1tb.jpg"
@@ -477,10 +477,10 @@ const Home = () => {
 
           <div className="absolute inset-0 bg-gradient-to-t from-black/80 via-black/40 to-transparent flex flex-col justify-end p-8">
             <h3 className="text-white text-3xl font-bold">
-              Staff Meeting
+              Annual Prize Distribution
             </h3>
             <p className="text-gray-200 mt-2">
-              Darul Uloom Jamia Razvia – Academic Planning Session
+              Madarsa Toppers – Academic Year 2025-26
             </p>
             <a
               href="https://res.cloudinary.com/dadqwaqis/image/upload/v1772386715/IMG-20260226-WA0005_n0hedh.jpg"
