@@ -685,30 +685,31 @@ const Home = () => {
 </section>
 
 
-{/* Our Philosophy Section - Upgraded Premium Version */}
-<section className="relative py-28 bg-gradient-to-b from-emerald-50 via-white to-emerald-50 overflow-hidden">
+{/* Our Philosophy Section - Ultra Premium Design */}
+<section className="relative py-32 bg-white overflow-hidden">
 
-  {/* Decorative Background Effects */}
-  <div className="absolute top-0 left-0 w-72 h-72 bg-gold-primary/10 rounded-full blur-3xl"></div>
-  <div className="absolute bottom-0 right-0 w-96 h-96 bg-emerald-300/20 rounded-full blur-3xl"></div>
+  {/* Elegant Soft Background Shapes */}
+  <div className="absolute top-[-100px] left-[-100px] w-[350px] h-[350px] bg-emerald-100 rounded-full blur-3xl opacity-40"></div>
+  <div className="absolute bottom-[-120px] right-[-120px] w-[400px] h-[400px] bg-gold-primary/10 rounded-full blur-3xl"></div>
 
-  <div className="max-w-7xl mx-auto px-4 relative z-10">
+  <div className="max-w-7xl mx-auto px-6 relative z-10">
 
-    <div className="grid grid-cols-1 lg:grid-cols-2 gap-20 items-center">
+    <div className="grid grid-cols-1 lg:grid-cols-2 gap-24 items-center">
 
-      {/* LEFT SIDE CONTENT */}
-      <div>
+      {/* LEFT SIDE */}
+      <div className="relative">
 
-        <p className="font-urdu text-2xl text-gold-primary mb-3">
+        {/* Decorative Vertical Line */}
+        <div className="absolute -left-6 top-0 h-full w-1 bg-gradient-to-b from-gold-primary to-emerald-600 rounded-full hidden lg:block"></div>
+
+        <p className="font-urdu text-2xl text-gold-primary mb-4 tracking-wide">
           ہمارا نظریہ
         </p>
 
-        <h2 className="font-serif text-4xl md:text-5xl font-bold text-emerald-900 leading-tight mb-6">
-          Education <br />
-          <span className="text-gold-primary">Matters</span>
+        <h2 className="font-serif text-5xl font-bold text-emerald-900 leading-tight mb-8">
+          Education
+          <span className="block text-gold-primary">Matters</span>
         </h2>
-
-        <div className="w-20 h-1 bg-gold-primary mb-8"></div>
 
         <p className="text-gray-700 leading-relaxed mb-6 text-lg">
           Education is a fundamental necessity for the holistic development of individuals. 
@@ -723,18 +724,18 @@ const Home = () => {
           equips students with the tools they need to thrive and contribute to society.
         </p>
 
-        <p className="font-urdu text-gray-700 leading-relaxed mb-10 text-lg">
+        <p className="font-urdu text-gray-700 leading-relaxed mb-12 text-lg">
           تعلیم انسان کی ہمہ جہت ترقی کے لیے بنیادی ضرورت ہے۔ یہ ذہن، کردار اور صلاحیتوں 
           کو سنوارتی ہے اور انسان کو بامقصد اور مؤثر زندگی گزارنے کے قابل بناتی ہے۔ 
           ہمارے ادارے میں اعلیٰ معیار کی تعلیم فراہم کی جاتی ہے تاکہ طلبہ معاشرے میں 
           مثبت کردار ادا کر سکیں۔
         </p>
 
-        {/* Highlight Cards */}
-        <div className="grid sm:grid-cols-2 gap-8">
+        {/* Highlight Features */}
+        <div className="grid sm:grid-cols-2 gap-10">
 
-          <div className="bg-white p-8 rounded-2xl shadow-lg border border-emerald-100 hover:shadow-2xl hover:-translate-y-2 transition duration-500">
-            <h4 className="text-xl font-bold text-emerald-900 mb-3">
+          <div className="group bg-emerald-50 p-8 rounded-3xl border border-emerald-100 hover:bg-white hover:shadow-xl transition duration-500">
+            <h4 className="text-xl font-bold text-emerald-900 mb-3 group-hover:text-gold-primary transition">
               Quality Education
             </h4>
             <p className="text-gray-600 text-sm">
@@ -745,8 +746,8 @@ const Home = () => {
             </p>
           </div>
 
-          <div className="bg-white p-8 rounded-2xl shadow-lg border border-emerald-100 hover:shadow-2xl hover:-translate-y-2 transition duration-500">
-            <h4 className="text-xl font-bold text-emerald-900 mb-3">
+          <div className="group bg-emerald-50 p-8 rounded-3xl border border-emerald-100 hover:bg-white hover:shadow-xl transition duration-500">
+            <h4 className="text-xl font-bold text-emerald-900 mb-3 group-hover:text-gold-primary transition">
               Holistic Growth
             </h4>
             <p className="text-gray-600 text-sm">
@@ -761,32 +762,32 @@ const Home = () => {
 
       </div>
 
-      {/* RIGHT SIDE - YOUTUBE VIDEO */}
+      {/* RIGHT SIDE - VIDEO */}
       <div className="relative group">
 
-        {/* Glow Effect */}
-        <div className="absolute -inset-3 bg-gradient-to-r from-gold-primary/20 to-emerald-300/20 rounded-3xl blur-2xl opacity-70 group-hover:opacity-100 transition duration-500"></div>
+        {/* Outer Glow Border */}
+        <div className="absolute -inset-4 bg-gradient-to-r from-emerald-200 to-gold-primary/30 rounded-3xl blur-xl opacity-60 group-hover:opacity-80 transition"></div>
 
         <div className="relative bg-white p-6 rounded-3xl shadow-2xl border border-emerald-100">
 
-          <div className="text-center mb-5">
+          <div className="text-center mb-6">
             <h3 className="text-2xl font-bold text-emerald-900">
               Institutional Overview
             </h3>
-            <p className="font-urdu text-gray-600 text-sm">
+            <p className="font-urdu text-gray-600 text-sm mt-1">
               ادارے کا تعارفی ویڈیو
             </p>
           </div>
 
-          {/* Responsive 16:9 Video */}
+          {/* Responsive 16:9 Ratio */}
           <div
-            className="relative w-full overflow-hidden rounded-2xl shadow-lg"
+            className="relative w-full rounded-2xl overflow-hidden shadow-xl"
             style={{ paddingTop: "56.25%" }}
           >
             <iframe
               className="absolute top-0 left-0 w-full h-full"
               src="https://www.youtube.com/embed/CZ34yB7vH_g"
-              title="Institution Introduction Video"
+              title="Institution Overview"
               frameBorder="0"
               allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
               allowFullScreen
