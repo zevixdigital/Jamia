@@ -186,50 +186,50 @@ const TeachingStaff = () => {
       ],
     },
     'madarsa-jannat-ul-banaat': {
-      institution: 'Madarsa Jannat-ul-Banaat Barkate Fatima',
-      institutionUrdu: 'مدرسہ جنت البنات',
-      totalStaff: '16',
-      qualifiedStaff: '15+',
-      description: 'Female teaching staff with qualifications from renowned Islamic and modern institutions, dedicated to educating our sisters.',
-      departments: [
-        {
-          name: 'Administration',
-          teachers: [
-            { name: 'Shaista Bi', qualification: 'M.A (English)', roleOrSubject: 'Principal | Subject: Science' },
-            { name: 'Aalima Muniba Bi', qualification: 'Kamil (Arabic)', roleOrSubject: 'Vice Principal | Subject: Hadees' },
-            { name: 'Ghazala Naaz', qualification: 'M.A (History)', roleOrSubject: 'Office Attendant' },
-          ],
-        },
-        {
-          name: 'Islamic Studies & Theology',
-          teachers: [
-            { name: 'Aalima Anjum Fatima', qualification: 'Kamil (Arabic)', roleOrSubject: 'Subject: Tafaseer' },
-            { name: 'Aalima Ayesha Bi', qualification: 'Kamil (Arabic) & B.A', roleOrSubject: 'Subject: Mantiq' },
-            { name: 'Aalima Nikhat Fatima', qualification: 'Aalim', roleOrSubject: 'Subject: Nahw' },
-            { name: 'Aashiqana Barkati', qualification: 'Aalim (Arabic)', roleOrSubject: 'Subject: Deeniyat' },
-          ],
-        },
-        {
-          name: 'Languages (Arabic, Persian & Urdu)',
-          teachers: [
-            { name: 'Aalima Phool Shadma', qualification: 'Kamil (Arabic) & B.A', roleOrSubject: 'Subject: Arabic' },
-            { name: 'Aalima Naziya Bi', qualification: 'Aalim & B.A', roleOrSubject: 'Subject: Persian' },
-            { name: 'Aalima Samiya Bi', qualification: 'Aalim', roleOrSubject: 'Subject: Adab' },
-            { name: 'Hafsa Barkati', qualification: 'Aalim (Arabic)', roleOrSubject: 'Subject: Urdu' },
-            { name: 'Nargis', qualification: 'B.A (Urdu)', roleOrSubject: 'Subject: Arabic' },
-          ],
-        },
-        {
-          name: 'Modern Subjects',
-          teachers: [
-            { name: 'Naseem Jahan', qualification: 'M.A (English, Sociology, Pol. Science)', roleOrSubject: 'Subject: English' },
-            { name: 'Anam Kabeer', qualification: 'M.com (Accounts)', roleOrSubject: 'Subject: Mathematics' },
-            { name: 'Shahana', qualification: 'M.A (Political Science)', roleOrSubject: 'Subject: Social Science' },
-            { name: 'Shabeena Bi', qualification: 'M.A (Theology)', roleOrSubject: 'Subject: General Knowledge' },
-          ],
-        },
+  institution: 'Madarsa Jannat-ul-Banaat Barkate Fatima',
+  institutionUrdu: 'مدرسہ جنت البنات',
+  totalStaff: '16',
+  qualifiedStaff: '15+',
+  description: 'Female teaching staff with qualifications from renowned Islamic and modern institutions, dedicated to educating our sisters.',
+  departments: [
+    {
+      name: 'Administration',
+      teachers: [
+        { name: 'Shaista Bi', qualification: 'M.A (English)', roleOrSubject: 'Principal | Subject: Science' },
+        { name: 'Aalima Muniba Bi', qualification: 'Kamil (Arabic)', roleOrSubject: 'Vice Principal | Subject: Hadees' },
+        { name: 'Ghazala Naaz', qualification: 'M.A (History)', roleOrSubject: 'Office Attendant' },
       ],
     },
+    {
+      name: 'Islamic Studies & Theology',
+      teachers: [
+        { name: 'Aalima Anjum Fatima', qualification: 'Kamil (Arabic)', roleOrSubject: 'Teacher | Subject: Tafaseer' },
+        { name: 'Aalima Ayesha Bi', qualification: 'Kamil (Arabic) & B.A', roleOrSubject: 'Teacher | Subject: Mantiq' },
+        { name: 'Aalima Nikhat Fatima', qualification: 'Aalim', roleOrSubject: 'Teacher | Subject: Nahw' },
+        { name: 'Aashiqana Barkati', qualification: 'Aalim (Arabic)', roleOrSubject: 'Teacher | Subject: Deeniyat' },
+      ],
+    },
+    {
+      name: 'Languages (Arabic, Persian & Urdu)',
+      teachers: [
+        { name: 'Aalima Phool Shadma', qualification: 'Kamil (Arabic) & B.A', roleOrSubject: 'Teacher | Subject: Arabic' },
+        { name: 'Aalima Naziya Bi', qualification: 'Aalim & B.A', roleOrSubject: 'Teacher | Subject: Persian' },
+        { name: 'Aalima Samiya Bi', qualification: 'Aalim', roleOrSubject: 'Teacher | Subject: Adab' },
+        { name: 'Hafsa Barkati', qualification: 'Aalim (Arabic)', roleOrSubject: 'Teacher | Subject: Urdu' },
+        { name: 'Nargis', qualification: 'B.A (Urdu)', roleOrSubject: 'Teacher | Subject: Arabic' },
+      ],
+    },
+    {
+      name: 'Modern Subjects',
+      teachers: [
+        { name: 'Naseem Jahan', qualification: 'M.A (English, Sociology, Political Science)', roleOrSubject: 'Teacher | Subject: English' },
+        { name: 'Anam Kabeer', qualification: 'M.com (Accounts)', roleOrSubject: 'Teacher | Subject: Mathematics' },
+        { name: 'Shahana', qualification: 'M.A (Political Science)', roleOrSubject: 'Teacher | Subject: Social Science' },
+        { name: 'Shabeena Bi', qualification: 'M.A (Theology)', roleOrSubject: 'Teacher | Subject: General Knowledge' },
+      ],
+    },
+  ],
+},
     'abdul-razzaq-girls-college': {
       institution: 'Abdul Razzaq Girls Inter College',
       institutionUrdu: 'عبدالرزاق گرلز انٹر کالج',
