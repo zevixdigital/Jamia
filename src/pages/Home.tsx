@@ -326,21 +326,29 @@ const Home = () => {
 
 
      {/* About Section */}
-<section className="py-16 bg-white">
+<section className="py-20 bg-gradient-to-b from-white to-emerald-light/10">
   <div className="max-w-7xl mx-auto px-4">
-    <div className="grid grid-cols-1 lg:grid-cols-2 gap-12 items-center">
-      
+    <div className="grid grid-cols-1 lg:grid-cols-2 gap-16 items-center">
+
       {/* Left Side - Text Content */}
       <div>
-        <p className="section-subtitle mb-2">ہمارے بارے میں</p>
-        <h2 className="section-title">Jamia Razvia <br/> Founder & Manager</h2>
-        
+        <p className="text-gold-primary font-urdu text-lg mb-2">
+          ہمارے بارے میں
+        </p>
+
+        <h2 className="font-serif text-4xl md:text-5xl font-bold text-emerald-deep mb-6 leading-tight">
+          Jamia Razvia <br />
+          <span className="text-gold-primary">Founder & Manager</span>
+        </h2>
+
+        <div className="w-20 h-1 bg-gold-primary mb-6 rounded-full"></div>
+
         <p className="text-gray-600 leading-relaxed mb-4">
           Darul Uloom Jamia Razvia is a leading academic and charitable religious educational 
           institution run by Darul Uloom Jamia Razvia Management Society in Kemri, Rampur, 
           Uttar Pradesh, India. This society was registered in 1996 to fulfill its objectives.
         </p>
-        
+
         <p className="text-gray-600 leading-relaxed mb-8">
           Initially, Madarsa Darul Uloom Jamia Razvia was founded in 1972 by Mohtamim 
           al-Haj Abdul Razzaq (R.A). It was a great honor that the foundation stone was 
@@ -348,49 +356,66 @@ const Home = () => {
           – a worthy son of Huzoor Aala Hazrat, Imam Ahmad Raza Khan (R.A).
         </p>
 
-        <Link to="/about" className="inline-flex items-center gap-2 btn-primary">
+        <Link
+          to="/about"
+          className="inline-flex items-center gap-2 bg-emerald-deep text-white px-6 py-3 rounded-full font-medium shadow-md hover:bg-gold-primary transition duration-300"
+        >
           Explore More / مزید جانیں
           <ArrowRight className="w-5 h-5" />
         </Link>
       </div>
 
-      {/* Right Side - Founder & Manager Cards (Dono images same style & same URL rakhi hain) */}
-      <div className="grid grid-cols-1 sm:grid-cols-2 gap-8">
-        
-        {/* Founder */}
-        <div className="text-center">
-          <div className="islamic-border rounded-lg overflow-hidden mb-4">
-            <img
-              src="https://res.cloudinary.com/dadqwaqis/image/upload/v1761400260/WhatsApp_Image_2025-10-22_at_18.59.50_3f528170_adu2uf.jpg"
-              alt="Mohtamim al-Haj Abdul Razzaq (R.A.)"
-              className="w-full h-auto"
-            />
+      {/* Right Side - Founder & Manager Cards */}
+      <div className="grid grid-cols-1 sm:grid-cols-2 gap-10">
+
+        {/* Founder Card */}
+        <div className="bg-white rounded-2xl shadow-lg p-6 text-center group hover:shadow-2xl transition duration-500">
+          
+          <div className="relative mx-auto w-[200px] mb-5">
+            <div className="absolute inset-0 bg-gold-primary/20 blur-2xl opacity-0 group-hover:opacity-100 transition duration-500 rounded-full"></div>
+
+            <div className="relative rounded-full overflow-hidden border-4 border-gold-primary shadow-md">
+              <img
+                src="https://res.cloudinary.com/dadqwaqis/image/upload/v1761400260/WhatsApp_Image_2025-10-22_at_18.59.50_3f528170_adu2uf.jpg"
+                alt="Mohtamim al-Haj Abdul Razzaq (R.A.)"
+                className="w-[200px] h-[200px] object-cover transition duration-500 group-hover:scale-105"
+              />
+            </div>
           </div>
-          <h3 className="font-serif text-2xl font-bold text-emerald-deep mb-1">
+
+          <h3 className="font-serif text-xl font-bold text-emerald-deep mb-1">
             Mohtamim al-Haj Abdul Razzaq (R.A.)
           </h3>
-          <p className="text-gold-primary font-medium text-lg">Founder / بانی</p>
-          <div className="mt-3 inline-block bg-emerald-deep text-white text-sm px-4 py-1 rounded-full">
-            
-          </div>
+          <p className="text-gold-primary font-medium text-sm">
+            Founder / بانی
+          </p>
         </div>
 
-        {/* Manager */}
-        <div className="text-center">
-          <div className="islamic-border rounded-lg overflow-hidden mb-4">
-            <img
-            src='https://res.cloudinary.com/dadqwaqis/image/upload/v1761400560/Manager_sb_hye1dz.jpg'
-              alt="Mohtamim Qari Zafruddin Sahib"
-              className="w-full h-auto"
-            />
+        {/* Manager Card */}
+        <div className="bg-white rounded-2xl shadow-lg p-6 text-center group hover:shadow-2xl transition duration-500">
+          
+          <div className="relative mx-auto w-[200px] mb-5">
+            <div className="absolute inset-0 bg-emerald-deep/20 blur-2xl opacity-0 group-hover:opacity-100 transition duration-500 rounded-full"></div>
+
+            <div className="relative rounded-full overflow-hidden border-4 border-emerald-deep shadow-md">
+              <img
+                src="https://res.cloudinary.com/dadqwaqis/image/upload/v1761400560/Manager_sb_hye1dz.jpg"
+                alt="Mohtamim Qari Zafruddin Sahib"
+                className="w-[200px] h-[200px] object-cover transition duration-500 group-hover:scale-105"
+              />
+            </div>
           </div>
-          <h3 className="font-serif text-2xl font-bold text-emerald-deep mb-1">
+
+          <h3 className="font-serif text-xl font-bold text-emerald-deep mb-1">
             Mohtamim Qari Zafruddin Sahib
           </h3>
-          <p className="text-gold-primary font-medium text-lg">Manager / منتظم</p>
+          <p className="text-gold-primary font-medium text-sm">
+            Manager / منتظم
+          </p>
         </div>
 
       </div>
+
     </div>
   </div>
 </section>
