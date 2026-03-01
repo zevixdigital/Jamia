@@ -685,10 +685,10 @@ const Home = () => {
 </section>
 
 
-{/* Our Philosophy Section - Premium Version */}
+{/* Our Philosophy Section - Upgraded Premium Version */}
 <section className="relative py-28 bg-gradient-to-b from-emerald-50 via-white to-emerald-50 overflow-hidden">
 
-  {/* Soft Decorative Background Glow */}
+  {/* Decorative Background Effects */}
   <div className="absolute top-0 left-0 w-72 h-72 bg-gold-primary/10 rounded-full blur-3xl"></div>
   <div className="absolute bottom-0 right-0 w-96 h-96 bg-emerald-300/20 rounded-full blur-3xl"></div>
 
@@ -699,12 +699,10 @@ const Home = () => {
       {/* LEFT SIDE CONTENT */}
       <div>
 
-        {/* Urdu Title */}
         <p className="font-urdu text-2xl text-gold-primary mb-3">
           ہمارا نظریہ
         </p>
 
-        {/* English Heading */}
         <h2 className="font-serif text-4xl md:text-5xl font-bold text-emerald-900 leading-tight mb-6">
           Education <br />
           <span className="text-gold-primary">Matters</span>
@@ -712,21 +710,19 @@ const Home = () => {
 
         <div className="w-20 h-1 bg-gold-primary mb-8"></div>
 
-        {/* English Description */}
         <p className="text-gray-700 leading-relaxed mb-6 text-lg">
           Education is a fundamental necessity for the holistic development of individuals. 
-          It shapes the mind, strengthens character, and refines abilities—preparing people 
-          to lead meaningful and impactful lives.
+          Broadly defined, education shapes the mind, character, and physical abilities, 
+          preparing people to lead meaningful and impactful lives.
         </p>
 
         <p className="text-gray-700 leading-relaxed mb-6">
-          Through the process of <strong>Taalim</strong>, society transfers its knowledge, 
-          skills, and values from one generation to the next. Our institution is committed 
-          to delivering quality education that empowers students to thrive and contribute 
-          positively to the nation.
+          It is the process through which society imparts its accumulated knowledge, skills, 
+          and values—referred to as <strong>Taalim</strong>—from one generation to the next. 
+          At our institutions, we are committed to providing high-quality education that 
+          equips students with the tools they need to thrive and contribute to society.
         </p>
 
-        {/* Urdu Description */}
         <p className="font-urdu text-gray-700 leading-relaxed mb-10 text-lg">
           تعلیم انسان کی ہمہ جہت ترقی کے لیے بنیادی ضرورت ہے۔ یہ ذہن، کردار اور صلاحیتوں 
           کو سنوارتی ہے اور انسان کو بامقصد اور مؤثر زندگی گزارنے کے قابل بناتی ہے۔ 
@@ -737,7 +733,7 @@ const Home = () => {
         {/* Highlight Cards */}
         <div className="grid sm:grid-cols-2 gap-8">
 
-          <div className="bg-white p-8 rounded-2xl shadow-lg border border-emerald-100 hover:shadow-2xl transition duration-500">
+          <div className="bg-white p-8 rounded-2xl shadow-lg border border-emerald-100 hover:shadow-2xl hover:-translate-y-2 transition duration-500">
             <h4 className="text-xl font-bold text-emerald-900 mb-3">
               Quality Education
             </h4>
@@ -749,7 +745,7 @@ const Home = () => {
             </p>
           </div>
 
-          <div className="bg-white p-8 rounded-2xl shadow-lg border border-emerald-100 hover:shadow-2xl transition duration-500">
+          <div className="bg-white p-8 rounded-2xl shadow-lg border border-emerald-100 hover:shadow-2xl hover:-translate-y-2 transition duration-500">
             <h4 className="text-xl font-bold text-emerald-900 mb-3">
               Holistic Growth
             </h4>
@@ -765,24 +761,31 @@ const Home = () => {
 
       </div>
 
-      {/* RIGHT SIDE - VIDEO */}
-      <div>
+      {/* RIGHT SIDE - YOUTUBE VIDEO */}
+      <div className="relative group">
 
-        <div className="bg-white p-4 rounded-3xl shadow-2xl border border-emerald-100">
+        {/* Glow Effect */}
+        <div className="absolute -inset-3 bg-gradient-to-r from-gold-primary/20 to-emerald-300/20 rounded-3xl blur-2xl opacity-70 group-hover:opacity-100 transition duration-500"></div>
 
-          <div className="mb-4 text-center">
-            <h3 className="text-xl font-bold text-emerald-900">
-              Watch Our Institutional Overview
+        <div className="relative bg-white p-6 rounded-3xl shadow-2xl border border-emerald-100">
+
+          <div className="text-center mb-5">
+            <h3 className="text-2xl font-bold text-emerald-900">
+              Institutional Overview
             </h3>
             <p className="font-urdu text-gray-600 text-sm">
-              ادارے کا تعارفی ویڈیو دیکھیں
+              ادارے کا تعارفی ویڈیو
             </p>
           </div>
 
-          <div className="rounded-2xl overflow-hidden">
+          {/* Responsive 16:9 Video */}
+          <div
+            className="relative w-full overflow-hidden rounded-2xl shadow-lg"
+            style={{ paddingTop: "56.25%" }}
+          >
             <iframe
-              className="w-full h-[300px] md:h-[420px]"
-              src="https://youtu.be/CZ34yB7vH_g"
+              className="absolute top-0 left-0 w-full h-full"
+              src="https://www.youtube.com/embed/CZ34yB7vH_g"
               title="Institution Introduction Video"
               frameBorder="0"
               allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
