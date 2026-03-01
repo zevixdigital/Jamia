@@ -33,7 +33,6 @@ const TeachingStaff = () => {
       institutionUrdu: 'مدرسہ دارالعلوم جامعہ رضویہ',
       totalStaff: '45+',
       qualifiedStaff: '35+',
-      coverImage: 'https://res.cloudinary.com/dadqwaqis/image/upload/v1761400260/WhatsApp_Image_2025-10-22_at_18.59.50_3f528170_adu2uf.jpg',
       description: 'Our teaching staff includes highly qualified scholars, Muftis, Qaris and experienced modern education teachers dedicated to Dars-e-Nizami, Hifz, Qir’at and 1-12th Class (English Medium).',
 
       // Leadership (Principal & Vice-Principal)
