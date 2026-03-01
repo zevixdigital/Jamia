@@ -159,6 +159,109 @@ const Home = () => {
         </div>
       </section>
 
+
+
+
+      {/* Darul Uloom Jamia Razvia Section */}
+<section className="py-24 bg-gradient-to-b from-white to-emerald-light/10">
+  <div className="max-w-7xl mx-auto px-4">
+
+    {/* Header */}
+    <div className="text-center mb-16">
+      <h2 className="font-serif text-5xl font-bold text-emerald-deep">
+        Darul Uloom Jamia Razvia
+      </h2>
+      <div className="w-28 h-1 bg-gold-primary mx-auto mt-4 rounded-full"></div>
+    </div>
+
+    {/* Main Intro */}
+    <div className="max-w-4xl mx-auto text-center mb-16">
+      <p className="text-gray-700 leading-relaxed text-lg">
+        Darul Uloom Jamia Razvia is a leading Islamic & Modern educational Institute 
+        managed by the charitable organization 
+        <span className="font-semibold text-emerald-deep">
+          {" "}“Darul Ulum Jamay Rizwiya Prabandh Samiti”
+        </span>, 
+        registered in 1996 under Sections 12A and 80G of the Income Tax Act, 1961.
+      </p>
+    </div>
+
+    {/* History + Founder Section */}
+    <div className="grid grid-cols-1 lg:grid-cols-2 gap-16 items-center">
+
+      {/* Text Content */}
+      <div>
+        <h3 className="text-2xl font-bold text-emerald-deep mb-6">
+          Our Foundation & Legacy
+        </h3>
+
+        <p className="text-gray-600 leading-relaxed mb-6">
+          Madrasa Darul Uloom Jamia Razvia was founded in 1972 by 
+          <span className="font-semibold text-emerald-deep">
+            {" "}Mohtamim al-Haj Abdul Razzak (R.A.)
+          </span> (1924–2015). 
+          After 43 years of dedicated service, he left this world leaving behind a legacy 
+          of knowledge, discipline, and Islamic values.
+        </p>
+
+        <p className="text-gray-600 leading-relaxed mb-6">
+          It is also a matter of great honor that the foundation stone of this institution 
+          was laid by 
+          <span className="font-semibold text-emerald-deep">
+            {" "}Huzoor Maulana Shah Mufti-e-Azam Hind,
+            Huzoor Mustafa Raza Khan Quadri (R.A.)
+          </span>, 
+          the beloved son of Aala Hazrat Imam Ahmad Raza Khan Barelvi (R.A.).
+        </p>
+
+        <p className="text-gray-600 leading-relaxed">
+          Since 2015, the institution has been functioning under the guidance of 
+          <span className="font-semibold text-emerald-deep">
+            {" "}Hafiz Mohammad Zafruddin Barkaatia
+          </span> 
+          as the Manager (Mohtamim). Under his leadership, the Jamia is continuously 
+          progressing towards becoming a distinguished center of Islamic and Modern education, 
+          focusing on character building, community development, and national contribution.
+        </p>
+      </div>
+
+      {/* Image */}
+      <div className="relative group">
+        <img
+          src="https://res.cloudinary.com/dadqwaqis/image/upload/v1772386715/WhatsApp_Image_2026-02-26_at_2.44.55_PM_1_gio1tb.jpg"
+          alt="Darul Uloom Jamia Razvia"
+          className="rounded-2xl shadow-2xl w-full h-[480px] object-cover transition duration-500 group-hover:scale-105"
+        />
+      </div>
+    </div>
+
+    {/* Bottom Highlight Cards */}
+    <div className="mt-20 grid grid-cols-1 md:grid-cols-3 gap-8">
+
+      <div className="bg-white p-8 rounded-2xl shadow-lg text-center border border-emerald-50">
+        <h4 className="text-3xl font-bold text-gold-primary mb-2">1972</h4>
+        <p className="text-gray-600">Year of Establishment</p>
+      </div>
+
+      <div className="bg-white p-8 rounded-2xl shadow-lg text-center border border-emerald-50">
+        <h4 className="text-3xl font-bold text-gold-primary mb-2">1996</h4>
+        <p className="text-gray-600">Registered under 12A & 80G</p>
+      </div>
+
+      <div className="bg-white p-8 rounded-2xl shadow-lg text-center border border-emerald-50">
+        <h4 className="text-3xl font-bold text-gold-primary mb-2">43+</h4>
+        <p className="text-gray-600">Years of Founder's Service</p>
+      </div>
+
+    </div>
+
+  </div>
+</section>
+
+
+
+
+
      {/* Programs Section */}
 <section className="py-20 bg-gradient-to-b from-cream to-white relative overflow-hidden">
   <div className="max-w-7xl mx-auto px-4">
@@ -227,6 +330,8 @@ const Home = () => {
 
   </div>
 </section>
+
+
      {/* About Section */}
 <section className="py-16 bg-white">
   <div className="max-w-7xl mx-auto px-4">
