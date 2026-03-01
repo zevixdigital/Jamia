@@ -12,100 +12,82 @@ const Committee = () => {
       name: string;
       designation: string;
       qualification?: string;
+      contact?: string;
       image?: string;
     }[];
   }> = {
     'managing': {
       title: 'Managing Committee',
       titleUrdu: 'منتظمہ کمیٹی',
-      description: 'The Managing Committee is responsible for the day-to-day administration and strategic planning of Darul Uloom Jamia Razvia. Members are elected to oversee the smooth functioning of all institutional activities.',
+      description: 'The dedicated team leading Darul Uloom Jamia Razvia Management Society towards excellence in Islamic and modern education',
       members: [
         {
           name: 'Hafiz Mohammad Zafruddin Barkaati',
-          designation: 'President / Manager (Mohtamim)',
-          qualification: 'Islamic Scholar, Management Expert',
+          designation: 'Manager',
+          contact: 'manager.dujr@gmail.com | +91 9756733334',
         },
         {
-          name: 'Maulana Mohammad Ahmad Qadri',
-          designation: 'Vice President',
-          qualification: 'Senior Faculty Member',
+          name: 'Haji Ameer Ahmad',
+          designation: 'President',
+          contact: '+91 9520177316',
         },
         {
-          name: 'Janab Mohammad Aslam',
+          name: 'Prof. (Dr.) Tofeeq Aalam',
+          designation: 'Vice-President/CEO',
+          contact: 'tofeeq.aalam@gmail.com | +91 9058016190',
+        },
+        {
+          name: 'Haji Zahoor Ahmad',
           designation: 'Secretary',
-          qualification: 'Administrative Experience: 20+ years',
+          contact: '+91 9412646396',
         },
         {
-          name: 'Janab Mohammad Irfan',
-          designation: 'Joint Secretary',
-          qualification: 'Finance & Administration',
-        },
-        {
-          name: 'Janab Mohammad Rashid',
+          name: 'Haseel Ahmad',
           designation: 'Treasurer',
-          qualification: 'Chartered Accountant',
-        },
-        {
-          name: 'Maulana Mohammad Salman',
-          designation: 'Member',
-          qualification: 'Education Department Head',
-        },
-        {
-          name: 'Janab Mohammad Imran',
-          designation: 'Member',
-          qualification: 'Community Representative',
-        },
-        {
-          name: 'Janab Mohammad Farhan',
-          designation: 'Member',
-          qualification: 'Youth Representative',
+          contact: '+91 9412667488',
         },
       ],
     },
     'advisory': {
       title: 'Advisory Committee',
       titleUrdu: 'مشاورتی کمیٹی',
-      description: 'The Advisory Committee comprises esteemed Islamic scholars and community leaders who provide guidance on religious, educational, and ethical matters. Their wisdom helps maintain the institution\'s commitment to authentic Islamic teachings.',
+      description: 'Distinguished scholars and experts providing strategic guidance and wisdom to our institution',
       members: [
         {
-          name: 'Mufti Mohammad Akhtar Raza Khan',
+          name: 'Maulana Shah Ahmed Raza Qadri',
           designation: 'Chief Advisor',
-          qualification: 'Grand Mufti, Islamic Jurisprudence Expert',
+          qualification: 'Islamic Jurisprudence',
+          contact: 'advisor1@jrdu.com | +91-2567-252270',
         },
         {
-          name: 'Maulana Mohammad Tahseen Raza Khan',
-          designation: 'Religious Advisor',
-          qualification: 'Hadith Scholar, Author',
+          name: 'Dr. Mohammad Aslam',
+          designation: 'Academic Advisor',
+          qualification: 'Modern Education & Research',
+          contact: 'advisor2@jrdu.com | +91-2567-252271',
         },
         {
-          name: 'Maulana Mohammad Asjad Raza Khan',
-          designation: 'Educational Advisor',
-          qualification: 'Former Principal, Darul Uloom',
+          name: 'Maulana Fazlur Rahman',
+          designation: 'Religious Affairs Advisor',
+          qualification: 'Hadith & Tafseer',
+          contact: 'advisor3@jrdu.com | +91-2567-252272',
         },
         {
-          name: 'Dr. Mohammad Shahabuddin',
-          designation: 'Modern Education Advisor',
-          qualification: 'Ph.D. in Education, University Professor',
+          name: 'Prof. Abdul Wahab',
+          designation: 'Education Advisor',
+          qualification: 'Curriculum Development',
+          contact: 'advisor4@jrdu.com | +91-2567-252273',
         },
         {
-          name: 'Maulana Mohammad Mumtaz Ahmad',
-          designation: 'Shariah Advisor',
-          qualification: 'Fiqh Expert, Qazi',
+          name: 'Maulana Mufti Azhar Ali',
+          designation: 'Legal Advisor',
+          qualification: 'Islamic Law & Fatwa',
+          contact: 'advisor5@jrdu.com | +91-2567-252274',
         },
         {
-          name: 'Janab Mohammad Haneef',
-          designation: 'Community Advisor',
-          qualification: 'Social Worker, Philanthropist',
-        },
-        {
-          name: 'Maulana Mohammad Naeem',
-          designation: 'Youth Affairs Advisor',
-          qualification: 'Youth Counselor, Motivational Speaker',
-        },
-        {
-          name: 'Dr. Mohammad Saleem',
-          designation: 'Health & Welfare Advisor',
-          qualification: 'Medical Doctor, Public Health Expert',
+          name: 'Dr. Sayyid Hamid',
+          designation: 'Development Advisor',
+          qualification: 'Infrastructure & Planning',
+          contact: 'advisor6@jrdu.com | +91-2567-252275',
         },
       ],
     },
@@ -155,6 +137,11 @@ const Committee = () => {
                   {member.qualification && (
                     <p className="text-gray-600 text-sm">{member.qualification}</p>
                   )}
+                  {member.contact && (
+                    <p className="text-emerald-700 text-sm mt-3 font-medium break-all">
+                      {member.contact}
+                    </p>
+                  )}
                 </div>
               </div>
             ))}
@@ -171,6 +158,11 @@ const Committee = () => {
                 <p className="text-gold-primary text-sm font-medium mb-2">{member.designation}</p>
                 {member.qualification && (
                   <p className="text-gray-600 text-xs">{member.qualification}</p>
+                )}
+                {member.contact && (
+                  <p className="text-emerald-700 text-sm mt-3 font-medium break-all">
+                    {member.contact}
+                  </p>
                 )}
               </div>
             ))}
@@ -189,41 +181,17 @@ const Committee = () => {
               {type === 'managing' ? (
                 <>
                   <p className="mb-4">
-                    The Managing Committee of Darul Uloom Jamia Razvia is elected by the members of 
-                    the Management Society. The committee meets regularly to discuss and decide on 
-                    matters related to the administration, finance, and development of the institution.
+                    The Managing Committee of Darul Uloom Jamia Razvia is responsible for the overall administration and development of the institution.
                   </p>
                   <p className="mb-4">
-                    Key responsibilities of the Managing Committee include:
+                    Key responsibilities include day-to-day management, financial oversight, staff appointments, infrastructure development, and ensuring excellence in both Islamic and modern education.
                   </p>
-                  <ul className="list-disc list-inside space-y-2 mb-4">
-                    <li>Overseeing day-to-day operations of all institutions</li>
-                    <li>Financial planning and budget allocation</li>
-                    <li>Appointment and supervision of teaching and non-teaching staff</li>
-                    <li>Infrastructure development and maintenance</li>
-                    <li>Admission policies and student welfare</li>
-                    <li>Community outreach and fundraising</li>
-                  </ul>
                 </>
               ) : (
                 <>
                   <p className="mb-4">
-                    The Advisory Committee comprises respected Islamic scholars and community leaders 
-                    who provide valuable guidance on religious, educational, and ethical matters. Their 
-                    expertise ensures that the institution maintains its commitment to authentic 
-                    Islamic teachings while adapting to contemporary challenges.
+                    The Advisory Committee comprises distinguished scholars and experts who provide strategic guidance and wisdom on religious, academic, legal and developmental matters to the institution.
                   </p>
-                  <p className="mb-4">
-                    The Advisory Committee's role includes:
-                  </p>
-                  <ul className="list-disc list-inside space-y-2 mb-4">
-                    <li>Guidance on religious curriculum and teachings</li>
-                    <li>Fatwa and religious consultation</li>
-                    <li>Ethical and moral guidance for the institution</li>
-                    <li>Review of educational policies from an Islamic perspective</li>
-                    <li>Community relations and public representation</li>
-                    <li>Long-term vision and strategic planning</li>
-                  </ul>
                 </>
               )}
             </div>

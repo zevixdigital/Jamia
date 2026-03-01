@@ -192,44 +192,75 @@ const Home = () => {
         </div>
       </section>
 
-      {/* About Section */}
-      <section className="py-16 bg-white">
-        <div className="max-w-7xl mx-auto px-4">
-          <div className="grid grid-cols-1 lg:grid-cols-2 gap-12 items-center">
-            <div>
-              <p className="section-subtitle mb-2">ہمارے بارے میں</p>
-              <h2 className="section-title">Darul Uloom Jamia Razvia</h2>
-              <p className="text-gray-600 leading-relaxed mb-4">
-                Darul Uloom Jamia Razvia is a leading academic and charitable religious educational 
-                institution run by Darul Uloom Jamia Razvia Management Society in Kemri, Rampur, 
-                Uttar Pradesh, India. This society was registered in 1996 to fulfill its objectives.
-              </p>
-              <p className="text-gray-600 leading-relaxed mb-6">
-                Initially, Madarsa Darul Uloom Jamia Razvia was founded in 1972 by Mohtamim 
-                al-Haj Abdul Razzaq (R.A). It was a great honor that the foundation stone was 
-                laid by Huzoor Maulana Shah Mufti-e-Azam Hind, Huzoor Mustafa Raza Khan Quadri (R.A).
-              </p>
-              <Link to="/about" className="inline-flex items-center gap-2 btn-primary">
-                Explore More
-                <ArrowRight className="w-5 h-5" />
-              </Link>
-            </div>
-            <div className="relative">
-              <div className="islamic-border rounded-lg overflow-hidden">
-                <img
-                  src="https://res.cloudinary.com/dadqwaqis/image/upload/v1761400260/WhatsApp_Image_2025-10-22_at_18.59.50_3f528170_adu2uf.jpg"
-                  alt="Founder"
-                  className="w-full h-auto"
-                />
-              </div>
-              <div className="absolute -bottom-4 -right-4 bg-emerald-deep text-white p-4 rounded-lg shadow-lg">
-                <p className="font-serif text-lg">Since 1972</p>
-                <p className="font-urdu text-gold-light text-sm">١٩٧٢ سے</p>
-              </div>
-            </div>
+     {/* About Section */}
+<section className="py-16 bg-white">
+  <div className="max-w-7xl mx-auto px-4">
+    <div className="grid grid-cols-1 lg:grid-cols-2 gap-12 items-center">
+      
+      {/* Left Side - Text Content */}
+      <div>
+        <p className="section-subtitle mb-2">ہمارے بارے میں</p>
+        <h2 className="section-title">Darul Uloom<br />Jamia Razvia</h2>
+        
+        <p className="text-gray-600 leading-relaxed mb-4">
+          Darul Uloom Jamia Razvia is a leading academic and charitable religious educational 
+          institution run by Darul Uloom Jamia Razvia Management Society in Kemri, Rampur, 
+          Uttar Pradesh, India. This society was registered in 1996 to fulfill its objectives.
+        </p>
+        
+        <p className="text-gray-600 leading-relaxed mb-8">
+          Initially, Madarsa Darul Uloom Jamia Razvia was founded in 1972 by Mohtamim 
+          al-Haj Abdul Razzaq (R.A). It was a great honor that the foundation stone was 
+          laid by Huzoor Maulana Shah Mufti-e-Azam Hind, Huzoor Mustafa Raza Khan Quadri (R.A) 
+          – a worthy son of Huzoor Aala Hazrat, Imam Ahmad Raza Khan (R.A).
+        </p>
+
+        <Link to="/about" className="inline-flex items-center gap-2 btn-primary">
+          Explore More / مزید جانیں
+          <ArrowRight className="w-5 h-5" />
+        </Link>
+      </div>
+
+      {/* Right Side - Founder & Manager Cards (Dono images same style & same URL rakhi hain) */}
+      <div className="grid grid-cols-1 sm:grid-cols-2 gap-8">
+        
+        {/* Founder */}
+        <div className="text-center">
+          <div className="islamic-border rounded-lg overflow-hidden mb-4">
+            <img
+              src="https://res.cloudinary.com/dadqwaqis/image/upload/v1761400260/WhatsApp_Image_2025-10-22_at_18.59.50_3f528170_adu2uf.jpg"
+              alt="Mohtamim al-Haj Abdul Razzaq (R.A.)"
+              className="w-full h-auto"
+            />
+          </div>
+          <h3 className="font-serif text-2xl font-bold text-emerald-deep mb-1">
+            Mohtamim al-Haj Abdul Razzaq (R.A.)
+          </h3>
+          <p className="text-gold-primary font-medium text-lg">Founder / بانی</p>
+          <div className="mt-3 inline-block bg-emerald-deep text-white text-sm px-4 py-1 rounded-full">
+            Since 1972
           </div>
         </div>
-      </section>
+
+        {/* Manager */}
+        <div className="text-center">
+          <div className="islamic-border rounded-lg overflow-hidden mb-4">
+            <img
+              src="https://res.cloudinary.com/dadqwaqis/image/upload/v1761400260/WhatsApp_Image_2025-10-22_at_18.59.50_3f528170_adu2uf.jpg"
+              alt="Mohtamim Qari Zafruddin Sahib"
+              className="w-full h-auto"
+            />
+          </div>
+          <h3 className="font-serif text-2xl font-bold text-emerald-deep mb-1">
+            Mohtamim Qari Zafruddin Sahib
+          </h3>
+          <p className="text-gold-primary font-medium text-lg">Manager / منتظم</p>
+        </div>
+
+      </div>
+    </div>
+  </div>
+</section>
 
       {/* Why Choose Us */}
       <section className="py-16 bg-emerald-light/30">
