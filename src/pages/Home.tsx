@@ -238,7 +238,7 @@ const Home = () => {
           </h3>
           <p className="text-gold-primary font-medium text-lg">Founder / بانی</p>
           <div className="mt-3 inline-block bg-emerald-deep text-white text-sm px-4 py-1 rounded-full">
-            Since 1972
+            
           </div>
         </div>
 
