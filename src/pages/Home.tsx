@@ -420,74 +420,95 @@ const Home = () => {
   </div>
 </section>
 
-      {/* Why Choose Us */}
-<section className="py-20 bg-gradient-to-b from-emerald-light/20 to-white relative overflow-hidden">
-  <div className="max-w-7xl mx-auto px-4">
+      {/* Why Choose Us - Premium Version */}
+<section className="py-28 bg-gradient-to-b from-white via-emerald-light/5 to-white relative overflow-hidden">
 
-    {/* Section Header */}
-    <div className="text-center mb-16">
-      <p className="text-gold-primary font-urdu text-lg mb-2 tracking-wide">
-        کیوں ہم
+  {/* Subtle Background Glow */}
+  <div className="absolute top-0 left-1/2 -translate-x-1/2 w-[600px] h-[600px] bg-gold-primary/10 blur-[150px] rounded-full"></div>
+
+  <div className="max-w-7xl mx-auto px-4 relative">
+
+    {/* Header */}
+    <div className="text-center mb-24">
+      <p className="text-gold-primary font-urdu text-2xl mb-3 tracking-wide">
+        کیوں ہم؟
       </p>
 
-      <h2 className="font-serif text-4xl md:text-5xl font-bold text-emerald-deep relative inline-block">
+      <h2 className="font-serif text-5xl md:text-6xl font-bold text-emerald-deep">
         Why Choose Jamia?
-        <span className="block w-20 h-1 bg-gold-primary mx-auto mt-3 rounded-full"></span>
       </h2>
 
-      <p className="text-gray-600 max-w-2xl mx-auto mt-6 leading-relaxed">
-        Discover what sets Jamia apart — where tradition meets excellence 
-        and education shapes future leaders.
+      <div className="w-28 h-[3px] bg-gradient-to-r from-gold-primary to-emerald-deep mx-auto mt-6 rounded-full"></div>
+
+      <p className="text-gray-600 max-w-2xl mx-auto mt-8 leading-relaxed text-lg">
+        Discover what makes Jamia Razvia a distinguished institution where
+        tradition, discipline and academic excellence come together.
+      </p>
+
+      <p className="font-urdu text-gray-600 max-w-2xl mx-auto mt-4 leading-relaxed text-lg">
+        جانئے وہ نمایاں خصوصیات جو جامعہ رضویہ کو ایک ممتاز تعلیمی ادارہ بناتی ہیں۔
       </p>
     </div>
 
-    {/* Features Grid */}
-    <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-8">
+    {/* Cards */}
+    <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-12">
 
       {[
         {
-          title: 'Integrated Curriculum',
-          desc: 'Balanced educational approach integrating Islamic and modern perspectives',
-          icon: '📚'
+          title: "Integrated Curriculum",
+          urdu: "مربوط نصاب",
+          desc: "Islamic and modern education combined in a balanced system.",
+          descUrdu: "اسلامی اور عصری تعلیم کا متوازن نظام۔",
         },
         {
-          title: 'Experienced Faculty',
-          desc: 'Dedicated instructors who are experts in their fields',
-          icon: '👨‍🏫'
+          title: "Experienced Faculty",
+          urdu: "ماہر اساتذہ",
+          desc: "Highly qualified and dedicated scholars and teachers.",
+          descUrdu: "تجربہ کار اور باصلاحیت اساتذہ۔",
         },
         {
-          title: 'Holistic Development',
-          desc: 'Academic excellence combined with personal growth',
-          icon: '🌱'
+          title: "Character Building",
+          urdu: "کردار سازی",
+          desc: "Focus on moral discipline, ethics and leadership.",
+          descUrdu: "اخلاق، نظم و ضبط اور قیادت پر خصوصی توجہ۔",
         },
         {
-          title: 'Vibrant Community',
-          desc: 'Warm, inclusive environment for all students',
-          icon: '🤝'
+          title: "Community Impact",
+          urdu: "سماجی خدمات",
+          desc: "Committed to social welfare and national development.",
+          descUrdu: "سماجی بہبود اور قومی ترقی کے لیے کوشاں۔",
         },
       ].map((item, index) => (
 
         <div
           key={index}
-          className="group bg-white/80 backdrop-blur-md p-8 rounded-2xl shadow-lg hover:shadow-2xl transition-all duration-500 transform hover:-translate-y-3 border border-emerald-50 text-center"
+          className="group relative bg-white rounded-3xl p-10 text-center shadow-xl hover:shadow-2xl transition-all duration-500 transform hover:-translate-y-5"
         >
-          {/* Icon */}
-          <div className="w-16 h-16 bg-gradient-to-br from-gold-primary to-emerald-deep rounded-full flex items-center justify-center mx-auto mb-6 text-2xl text-white shadow-md group-hover:scale-110 transition duration-500">
-            {item.icon}
+
+          {/* Animated Top Border */}
+          <div className="absolute top-0 left-0 w-full h-1 bg-gradient-to-r from-gold-primary to-emerald-deep scale-x-0 group-hover:scale-x-100 origin-left transition-transform duration-500 rounded-t-3xl"></div>
+
+          {/* Decorative Circle */}
+          <div className="w-20 h-20 mx-auto mb-8 rounded-full bg-gradient-to-br from-gold-primary to-emerald-deep flex items-center justify-center text-white text-2xl font-bold shadow-lg group-hover:scale-110 transition duration-500">
+            {index + 1}
           </div>
 
-          {/* Title */}
-          <h3 className="font-serif text-xl font-bold text-emerald-deep mb-3">
+          <h3 className="font-serif text-2xl font-bold text-emerald-deep mb-2">
             {item.title}
           </h3>
 
-          {/* Description */}
-          <p className="text-gray-600 text-sm leading-relaxed">
+          <p className="font-urdu text-gold-primary text-base mb-4">
+            {item.urdu}
+          </p>
+
+          <p className="text-gray-600 text-sm leading-relaxed mb-2">
             {item.desc}
           </p>
 
-          {/* Decorative Line */}
-          <div className="w-10 h-1 bg-gold-primary mx-auto mt-6 opacity-0 group-hover:opacity-100 transition duration-500 rounded-full"></div>
+          <p className="font-urdu text-gray-600 text-sm leading-relaxed">
+            {item.descUrdu}
+          </p>
+
         </div>
 
       ))}
@@ -496,7 +517,6 @@ const Home = () => {
 
   </div>
 </section>
-
       {/* Latest Notices */}
       <section className="py-16 bg-cream">
         <div className="max-w-7xl mx-auto px-4">
