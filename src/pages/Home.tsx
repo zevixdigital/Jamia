@@ -298,31 +298,81 @@ const Home = () => {
 </section>
 
       {/* Why Choose Us */}
-      <section className="py-16 bg-emerald-light/30">
-        <div className="max-w-7xl mx-auto px-4">
-          <div className="text-center mb-12">
-            <p className="section-subtitle mb-2">کیوں ہم</p>
-            <h2 className="section-title">Why Choose Jamia?</h2>
+<section className="py-20 bg-gradient-to-b from-emerald-light/20 to-white relative overflow-hidden">
+  <div className="max-w-7xl mx-auto px-4">
+
+    {/* Section Header */}
+    <div className="text-center mb-16">
+      <p className="text-gold-primary font-urdu text-lg mb-2 tracking-wide">
+        کیوں ہم
+      </p>
+
+      <h2 className="font-serif text-4xl md:text-5xl font-bold text-emerald-deep relative inline-block">
+        Why Choose Jamia?
+        <span className="block w-20 h-1 bg-gold-primary mx-auto mt-3 rounded-full"></span>
+      </h2>
+
+      <p className="text-gray-600 max-w-2xl mx-auto mt-6 leading-relaxed">
+        Discover what sets Jamia apart — where tradition meets excellence 
+        and education shapes future leaders.
+      </p>
+    </div>
+
+    {/* Features Grid */}
+    <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-8">
+
+      {[
+        {
+          title: 'Integrated Curriculum',
+          desc: 'Balanced educational approach integrating Islamic and modern perspectives',
+          icon: '📚'
+        },
+        {
+          title: 'Experienced Faculty',
+          desc: 'Dedicated instructors who are experts in their fields',
+          icon: '👨‍🏫'
+        },
+        {
+          title: 'Holistic Development',
+          desc: 'Academic excellence combined with personal growth',
+          icon: '🌱'
+        },
+        {
+          title: 'Vibrant Community',
+          desc: 'Warm, inclusive environment for all students',
+          icon: '🤝'
+        },
+      ].map((item, index) => (
+
+        <div
+          key={index}
+          className="group bg-white/80 backdrop-blur-md p-8 rounded-2xl shadow-lg hover:shadow-2xl transition-all duration-500 transform hover:-translate-y-3 border border-emerald-50 text-center"
+        >
+          {/* Icon */}
+          <div className="w-16 h-16 bg-gradient-to-br from-gold-primary to-emerald-deep rounded-full flex items-center justify-center mx-auto mb-6 text-2xl text-white shadow-md group-hover:scale-110 transition duration-500">
+            {item.icon}
           </div>
 
-          <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-6">
-            {[
-              { title: 'Integrated Curriculum', desc: 'Balanced educational approach integrating Islamic and modern perspectives' },
-              { title: 'Experienced Faculty', desc: 'Dedicated instructors who are experts in their fields' },
-              { title: 'Holistic Development', desc: 'Academic excellence combined with personal growth' },
-              { title: 'Vibrant Community', desc: 'Warm, inclusive environment for all students' },
-            ].map((item, index) => (
-              <div key={index} className="bg-white p-6 rounded-lg shadow-md text-center card-hover">
-                <div className="w-12 h-12 bg-gold-primary rounded-full flex items-center justify-center mx-auto mb-4">
-                  <span className="text-white font-bold">{index + 1}</span>
-                </div>
-                <h3 className="font-serif text-lg font-bold text-emerald-deep mb-2">{item.title}</h3>
-                <p className="text-gray-600 text-sm">{item.desc}</p>
-              </div>
-            ))}
-          </div>
+          {/* Title */}
+          <h3 className="font-serif text-xl font-bold text-emerald-deep mb-3">
+            {item.title}
+          </h3>
+
+          {/* Description */}
+          <p className="text-gray-600 text-sm leading-relaxed">
+            {item.desc}
+          </p>
+
+          {/* Decorative Line */}
+          <div className="w-10 h-1 bg-gold-primary mx-auto mt-6 opacity-0 group-hover:opacity-100 transition duration-500 rounded-full"></div>
         </div>
-      </section>
+
+      ))}
+
+    </div>
+
+  </div>
+</section>
 
       {/* Latest Notices */}
       <section className="py-16 bg-cream">
