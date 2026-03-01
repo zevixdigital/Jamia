@@ -1,5 +1,5 @@
 import { useParams, Link } from 'react-router-dom';
-import { Users, ArrowLeft, Award, BookOpen, GraduationCap, User } from 'lucide-react';
+import { Users, ArrowLeft, BookOpen, GraduationCap, User } from 'lucide-react';
 
 const TeachingStaff = () => {
   const { id } = useParams<{ id: string }>();
