@@ -163,23 +163,25 @@ const Home = () => {
 
 
       {/* Darul Uloom Jamia Razvia Section */}
-<section className="py-24 bg-gradient-to-b from-white to-emerald-light/10">
+<section className="py-24 bg-emerald-50 relative overflow-hidden">
   <div className="max-w-7xl mx-auto px-4">
 
     {/* Header */}
-    <div className="text-center mb-16">
-      <p className="text-gold-primary font-urdu text-xl mb-2">
+    <div className="text-center mb-20">
+      <p className="font-urdu text-2xl text-gold-primary mb-3">
         دارالعلوم جامعہ رضویہ
       </p>
-      <h2 className="font-serif text-5xl font-bold text-emerald-deep">
+
+      <h2 className="font-serif text-4xl md:text-5xl font-bold text-emerald-900">
         Darul Uloom Jamia Razvia
       </h2>
-      <div className="w-28 h-1 bg-gold-primary mx-auto mt-4 rounded-full"></div>
+
+      <div className="w-24 h-1 bg-gold-primary mx-auto mt-5"></div>
     </div>
 
-    {/* Short Introduction */}
-    <div className="max-w-4xl mx-auto text-center mb-16 space-y-6">
-      <p className="text-gray-700 text-lg leading-relaxed">
+    {/* Introduction Box */}
+    <div className="bg-white rounded-xl shadow-md border border-emerald-100 p-10 max-w-5xl mx-auto mb-20 text-center">
+      <p className="text-gray-700 text-lg leading-relaxed mb-6">
         Darul Uloom Jamia Razvia is a leading Islamic & Modern educational institute 
         managed by “Darul Ulum Jamay Rizwiya Prabandh Samiti”, registered in 1996 
         under Sections 12A and 80G of the Income Tax Act, 1961.
@@ -192,66 +194,76 @@ const Home = () => {
       </p>
     </div>
 
-    {/* Image + Short Details */}
+    {/* Main Content Grid */}
     <div className="grid grid-cols-1 lg:grid-cols-2 gap-16 items-center">
 
-      {/* Image */}
-      <div className="relative group">
-        <img
-          src="https://res.cloudinary.com/dadqwaqis/image/upload/v1772386715/WhatsApp_Image_2026-02-26_at_2.44.55_PM_1_gio1tb.jpg"
-          alt="Jamia Event"
-          className="rounded-2xl shadow-2xl w-full h-[450px] object-cover transition duration-500 group-hover:scale-105"
-        />
+      {/* Image Section */}
+      <div className="relative">
+        <div className="border-4 border-gold-primary rounded-xl overflow-hidden shadow-lg">
+          <img
+            src="https://res.cloudinary.com/dadqwaqis/image/upload/v1772386715/WhatsApp_Image_2026-02-26_at_2.44.55_PM_1_gio1tb.jpg"
+            alt="Jamia Event"
+            className="w-full h-[480px] object-cover"
+          />
+        </div>
+
+        {/* Decorative Corner */}
+        <div className="absolute -bottom-6 -right-6 bg-emerald-900 text-white px-6 py-3 rounded-md shadow-md">
+          Since 1972
+        </div>
       </div>
 
-      {/* Short Highlights */}
-      <div className="space-y-6">
+      {/* Highlights */}
+      <div className="space-y-10">
 
-        <div>
-          <h3 className="text-xl font-bold text-emerald-deep">
+        {/* Highlight 1 */}
+        <div className="border-l-4 border-gold-primary pl-6">
+          <h3 className="text-2xl font-bold text-emerald-900 mb-3">
             Founded in 1972
           </h3>
-          <p className="text-gray-600 text-sm">
-            Established by Mohtamim al-Haj Abdul Razzak (R.A.) (1924–2015),
+          <p className="text-gray-700 leading-relaxed mb-2">
+            Established by Mohtamim al-Haj Abdul Razzak (R.A.) (1924–2015), 
             leaving behind a legacy of knowledge and discipline.
           </p>
-          <p className="font-urdu text-gray-600 text-sm mt-2">
+          <p className="font-urdu text-gray-700">
             1972 میں حضرت الحاج عبدالرزاق (رحمتہ اللہ علیہ) نے اس ادارے کی بنیاد رکھی۔
           </p>
         </div>
 
-        <div>
-          <h3 className="text-xl font-bold text-emerald-deep">
+        {/* Highlight 2 */}
+        <div className="border-l-4 border-gold-primary pl-6">
+          <h3 className="text-2xl font-bold text-emerald-900 mb-3">
             Honored Foundation
           </h3>
-          <p className="text-gray-600 text-sm">
+          <p className="text-gray-700 leading-relaxed mb-2">
             The foundation stone was laid by Huzoor Mufti-e-Azam Hind 
             Mustafa Raza Khan Quadri (R.A.).
           </p>
-          <p className="font-urdu text-gray-600 text-sm mt-2">
+          <p className="font-urdu text-gray-700">
             اس ادارے کی بنیاد حضور مفتی اعظم ہند مصطفیٰ رضا خان قادری (رحمتہ اللہ علیہ) نے رکھی۔
           </p>
         </div>
 
-        <div>
-          <h3 className="text-xl font-bold text-emerald-deep">
+        {/* Highlight 3 */}
+        <div className="border-l-4 border-gold-primary pl-6">
+          <h3 className="text-2xl font-bold text-emerald-900 mb-3">
             Leadership Since 2015
           </h3>
-          <p className="text-gray-600 text-sm">
+          <p className="text-gray-700 leading-relaxed mb-2">
             Currently guided by Hafiz Mohammad Zafruddin Barkaatia as Mohtamim,
             focusing on character building and national contribution.
           </p>
-          <p className="font-urdu text-gray-600 text-sm mt-2">
+          <p className="font-urdu text-gray-700">
             2015 سے حافظ محمد ظفرالدین برکاتی کی سرپرستی میں ادارہ ترقی کی راہ پر گامزن ہے۔
           </p>
         </div>
 
       </div>
+
     </div>
 
   </div>
 </section>
-
 
 
 
