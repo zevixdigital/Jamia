@@ -168,96 +168,89 @@ const Home = () => {
 
     {/* Header */}
     <div className="text-center mb-16">
+      <p className="text-gold-primary font-urdu text-xl mb-2">
+        دارالعلوم جامعہ رضویہ
+      </p>
       <h2 className="font-serif text-5xl font-bold text-emerald-deep">
         Darul Uloom Jamia Razvia
       </h2>
       <div className="w-28 h-1 bg-gold-primary mx-auto mt-4 rounded-full"></div>
     </div>
 
-    {/* Main Intro */}
-    <div className="max-w-4xl mx-auto text-center mb-16">
-      <p className="text-gray-700 leading-relaxed text-lg">
-        Darul Uloom Jamia Razvia is a leading Islamic & Modern educational Institute 
-        managed by the charitable organization 
-        <span className="font-semibold text-emerald-deep">
-          {" "}“Darul Ulum Jamay Rizwiya Prabandh Samiti”
-        </span>, 
-        registered in 1996 under Sections 12A and 80G of the Income Tax Act, 1961.
+    {/* Short Introduction */}
+    <div className="max-w-4xl mx-auto text-center mb-16 space-y-6">
+      <p className="text-gray-700 text-lg leading-relaxed">
+        Darul Uloom Jamia Razvia is a leading Islamic & Modern educational institute 
+        managed by “Darul Ulum Jamay Rizwiya Prabandh Samiti”, registered in 1996 
+        under Sections 12A and 80G of the Income Tax Act, 1961.
+      </p>
+
+      <p className="font-urdu text-gray-700 text-lg leading-relaxed">
+        دارالعلوم جامعہ رضویہ ایک نمایاں اسلامی و عصری تعلیمی ادارہ ہے جو 
+        "دارالعلوم جمعی رضویہ پربندھ سمیتی" کے زیر انتظام چلایا جا رہا ہے، 
+        جو 1996 میں انکم ٹیکس ایکٹ 1961 کی دفعات 12A اور 80G کے تحت رجسٹرڈ ہے۔
       </p>
     </div>
 
-    {/* History + Founder Section */}
+    {/* Image + Short Details */}
     <div className="grid grid-cols-1 lg:grid-cols-2 gap-16 items-center">
-
-      {/* Text Content */}
-      <div>
-        <h3 className="text-2xl font-bold text-emerald-deep mb-6">
-          Our Foundation & Legacy
-        </h3>
-
-        <p className="text-gray-600 leading-relaxed mb-6">
-          Madrasa Darul Uloom Jamia Razvia was founded in 1972 by 
-          <span className="font-semibold text-emerald-deep">
-            {" "}Mohtamim al-Haj Abdul Razzak (R.A.)
-          </span> (1924–2015). 
-          After 43 years of dedicated service, he left this world leaving behind a legacy 
-          of knowledge, discipline, and Islamic values.
-        </p>
-
-        <p className="text-gray-600 leading-relaxed mb-6">
-          It is also a matter of great honor that the foundation stone of this institution 
-          was laid by 
-          <span className="font-semibold text-emerald-deep">
-            {" "}Huzoor Maulana Shah Mufti-e-Azam Hind,
-            Huzoor Mustafa Raza Khan Quadri (R.A.)
-          </span>, 
-          the beloved son of Aala Hazrat Imam Ahmad Raza Khan Barelvi (R.A.).
-        </p>
-
-        <p className="text-gray-600 leading-relaxed">
-          Since 2015, the institution has been functioning under the guidance of 
-          <span className="font-semibold text-emerald-deep">
-            {" "}Hafiz Mohammad Zafruddin Barkaatia
-          </span> 
-          as the Manager (Mohtamim). Under his leadership, the Jamia is continuously 
-          progressing towards becoming a distinguished center of Islamic and Modern education, 
-          focusing on character building, community development, and national contribution.
-        </p>
-      </div>
 
       {/* Image */}
       <div className="relative group">
         <img
           src="https://res.cloudinary.com/dadqwaqis/image/upload/v1772386715/WhatsApp_Image_2026-02-26_at_2.44.55_PM_1_gio1tb.jpg"
-          alt="Darul Uloom Jamia Razvia"
-          className="rounded-2xl shadow-2xl w-full h-[480px] object-cover transition duration-500 group-hover:scale-105"
+          alt="Jamia Event"
+          className="rounded-2xl shadow-2xl w-full h-[450px] object-cover transition duration-500 group-hover:scale-105"
         />
       </div>
-    </div>
 
-    {/* Bottom Highlight Cards */}
-    <div className="mt-20 grid grid-cols-1 md:grid-cols-3 gap-8">
+      {/* Short Highlights */}
+      <div className="space-y-6">
 
-      <div className="bg-white p-8 rounded-2xl shadow-lg text-center border border-emerald-50">
-        <h4 className="text-3xl font-bold text-gold-primary mb-2">1972</h4>
-        <p className="text-gray-600">Year of Establishment</p>
+        <div>
+          <h3 className="text-xl font-bold text-emerald-deep">
+            Founded in 1972
+          </h3>
+          <p className="text-gray-600 text-sm">
+            Established by Mohtamim al-Haj Abdul Razzak (R.A.) (1924–2015),
+            leaving behind a legacy of knowledge and discipline.
+          </p>
+          <p className="font-urdu text-gray-600 text-sm mt-2">
+            1972 میں حضرت الحاج عبدالرزاق (رحمتہ اللہ علیہ) نے اس ادارے کی بنیاد رکھی۔
+          </p>
+        </div>
+
+        <div>
+          <h3 className="text-xl font-bold text-emerald-deep">
+            Honored Foundation
+          </h3>
+          <p className="text-gray-600 text-sm">
+            The foundation stone was laid by Huzoor Mufti-e-Azam Hind 
+            Mustafa Raza Khan Quadri (R.A.).
+          </p>
+          <p className="font-urdu text-gray-600 text-sm mt-2">
+            اس ادارے کی بنیاد حضور مفتی اعظم ہند مصطفیٰ رضا خان قادری (رحمتہ اللہ علیہ) نے رکھی۔
+          </p>
+        </div>
+
+        <div>
+          <h3 className="text-xl font-bold text-emerald-deep">
+            Leadership Since 2015
+          </h3>
+          <p className="text-gray-600 text-sm">
+            Currently guided by Hafiz Mohammad Zafruddin Barkaatia as Mohtamim,
+            focusing on character building and national contribution.
+          </p>
+          <p className="font-urdu text-gray-600 text-sm mt-2">
+            2015 سے حافظ محمد ظفرالدین برکاتی کی سرپرستی میں ادارہ ترقی کی راہ پر گامزن ہے۔
+          </p>
+        </div>
+
       </div>
-
-      <div className="bg-white p-8 rounded-2xl shadow-lg text-center border border-emerald-50">
-        <h4 className="text-3xl font-bold text-gold-primary mb-2">1996</h4>
-        <p className="text-gray-600">Registered under 12A & 80G</p>
-      </div>
-
-      <div className="bg-white p-8 rounded-2xl shadow-lg text-center border border-emerald-50">
-        <h4 className="text-3xl font-bold text-gold-primary mb-2">43+</h4>
-        <p className="text-gray-600">Years of Founder's Service</p>
-      </div>
-
     </div>
 
   </div>
 </section>
-
 
 
 
@@ -340,7 +333,7 @@ const Home = () => {
       {/* Left Side - Text Content */}
       <div>
         <p className="section-subtitle mb-2">ہمارے بارے میں</p>
-        <h2 className="section-title">Darul Uloom<br />Jamia Razvia</h2>
+        <h2 className="section-title">Darul Uloom<br />Jamia Razvia Founder & Manager</h2>
         
         <p className="text-gray-600 leading-relaxed mb-4">
           Darul Uloom Jamia Razvia is a leading academic and charitable religious educational 
