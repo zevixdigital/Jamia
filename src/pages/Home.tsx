@@ -436,27 +436,27 @@ const Home = () => {
       <div className="flex overflow-x-auto snap-x snap-mandatory scroll-smooth">
 
         {/* Poster 1 */}
-        <a href="/posters/poster1.jpg" target="_blank" className="min-w-full snap-center">
+        <a href="https://res.cloudinary.com/dadqwaqis/image/upload/v1772386715/WhatsApp_Image_2026-02-26_at_2.44.55_PM_1_gio1tb.jpg" target="_blank" className="min-w-full snap-center">
           <img
-            src="/posters/poster1.jpg"
+            src="https://res.cloudinary.com/dadqwaqis/image/upload/v1772386715/WhatsApp_Image_2026-02-26_at_2.44.55_PM_1_gio1tb.jpg"
             alt="Poster 1"
             className="w-full h-[500px] object-contain bg-white"
           />
         </a>
 
         {/* Poster 2 */}
-        <a href="/posters/poster2.jpg" target="_blank" className="min-w-full snap-center">
+        <a href="https://res.cloudinary.com/dadqwaqis/image/upload/v1772386715/IMG-20260226-WA0005_n0hedh.jpg" target="_blank" className="min-w-full snap-center">
           <img
-            src="/posters/poster2.jpg"
+            src="https://res.cloudinary.com/dadqwaqis/image/upload/v1772386715/IMG-20260226-WA0005_n0hedh.jpg"
             alt="Poster 2"
             className="w-full h-[500px] object-contain bg-white"
           />
         </a>
 
         {/* Poster 3 */}
-        <a href="/posters/poster3.jpg" target="_blank" className="min-w-full snap-center">
+        <a href="https://res.cloudinary.com/dadqwaqis/image/upload/v1772386715/IMG-20260226-WA0005_n0hedh.jpg" target="_blank" className="min-w-full snap-center">
           <img
-            src="/posters/poster3.jpg"
+            src="https://res.cloudinary.com/dadqwaqis/image/upload/v1772386715/IMG-20260226-WA0005_n0hedh.jpg"
             alt="Poster 3"
             className="w-full h-[500px] object-contain bg-white"
           />
