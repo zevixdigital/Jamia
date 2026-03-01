@@ -1,5 +1,5 @@
 import { useParams, Link } from 'react-router-dom';
-import { Users, ArrowLeft, Award, BookOpen, GraduationCap } from 'lucide-react';
+import { Users, ArrowLeft, Award, BookOpen, GraduationCap, User } from 'lucide-react';
 
 const TeachingStaff = () => {
   const { id } = useParams<{ id: string }>();
@@ -10,9 +10,22 @@ const TeachingStaff = () => {
     totalStaff: string;
     qualifiedStaff: string;
     description: string;
+    coverImage?: string;
+    leadership?: {
+      name: string;
+      designation: string;
+      qualification: string;
+      roleOrSubject: string;
+      image?: string;
+    }[];
     departments: {
       name: string;
-      teachers: { name: string; qualification: string; roleOrSubject: string }[];
+      teachers: { 
+        name: string; 
+        qualification: string; 
+        roleOrSubject: string;
+        image?: string;
+      }[];
     }[];
   }> = {
     'madarsa-darul-loom': {
@@ -20,37 +33,157 @@ const TeachingStaff = () => {
       institutionUrdu: 'مدرسہ دارالعلوم جامعہ رضویہ',
       totalStaff: '45+',
       qualifiedStaff: '35+',
-      description: 'Our teaching staff includes graduates from prestigious institutions like Darul Uloom Deoband, Nadwatul Ulama, and other renowned Islamic universities.',
+      coverImage: 'https://res.cloudinary.com/dadqwaqis/image/upload/v1761400260/WhatsApp_Image_2025-10-22_at_18.59.50_3f528170_adu2uf.jpg',
+      description: 'Our teaching staff includes highly qualified scholars, Muftis, Qaris and experienced modern education teachers dedicated to Dars-e-Nizami, Hifz, Qir’at and 1-12th Class (English Medium).',
+
+      // Leadership (Principal & Vice-Principal)
+      leadership: [
+        {
+          name: 'Mr. Mohd Arif',
+          designation: 'Principal',
+          qualification: 'B.Ed. (AMU), NET Qualified',
+          roleOrSubject: '5+ Years Exp. | +91 9058840962',
+          image: 'https://res.cloudinary.com/dadqwaqis/image/upload/v1761400260/WhatsApp_Image_2025-10-22_at_18.59.50_3f528170_adu2uf.jpg'
+        },
+        {
+          name: 'Mufti Mohd Suhail',
+          designation: 'Vice-Principal',
+          qualification: 'Alim & M.A (Urdu)',
+          roleOrSubject: '3+ Years Exp. | +91 8057861431',
+          image: 'https://res.cloudinary.com/dadqwaqis/image/upload/v1761400260/WhatsApp_Image_2025-10-22_at_18.59.50_3f528170_adu2uf.jpg'
+        }
+      ],
+
+      // Departments (sab data bilkul exact + image)
       departments: [
         {
-          name: 'Quran & Tajweed',
+          name: 'Dars-e-Nizami & Islamic Studies',
           teachers: [
-            { name: 'Qari Mohammad Ahmad', qualification: 'Ijazah in Qiraat', roleOrSubject: 'Experience: 20 years' },
-            { name: 'Qari Mohammad Yusuf', qualification: 'Hafiz & Qari', roleOrSubject: 'Experience: 15 years' },
-            { name: 'Maulana Mohammad Imran', qualification: 'Masters in Tajweed', roleOrSubject: 'Experience: 12 years' },
+            { 
+              name: 'Molana Saleem Akhtar Misbahi', 
+              qualification: 'Fazil (Adab)', 
+              roleOrSubject: 'Teacher | 20+ Years Exp. | +91 9997234176', 
+              image: 'https://res.cloudinary.com/dadqwaqis/image/upload/v1761400260/WhatsApp_Image_2025-10-22_at_18.59.50_3f528170_adu2uf.jpg' 
+            },
+            { 
+              name: 'Molana Mohd Saleet Misbah', 
+              qualification: 'Fazil & M.A (Urdu)', 
+              roleOrSubject: 'Teacher | 10+ Years Exp. | +91 9012550383', 
+              image: 'https://res.cloudinary.com/dadqwaqis/image/upload/v1761400260/WhatsApp_Image_2025-10-22_at_18.59.50_3f528170_adu2uf.jpg' 
+            },
+            { 
+              name: 'Molana Mohd Arif', 
+              qualification: 'Fazil & M.A. (Urdu)', 
+              roleOrSubject: 'Teacher | 7+ Years Exp. | +91 9457275575', 
+              image: 'https://res.cloudinary.com/dadqwaqis/image/upload/v1761400260/WhatsApp_Image_2025-10-22_at_18.59.50_3f528170_adu2uf.jpg' 
+            },
+            { 
+              name: 'Molana Qamar Muneer', 
+              qualification: 'Fazil', 
+              roleOrSubject: 'Teacher | +91 9536695479', 
+              image: 'https://res.cloudinary.com/dadqwaqis/image/upload/v1761400260/WhatsApp_Image_2025-10-22_at_18.59.50_3f528170_adu2uf.jpg' 
+            },
+            { 
+              name: 'Molana Meiraj Alam', 
+              qualification: 'M.A (Urdu) B.Ed', 
+              roleOrSubject: 'Teacher | 2+ Years Exp. | +91 9759058843', 
+              image: 'https://res.cloudinary.com/dadqwaqis/image/upload/v1761400260/WhatsApp_Image_2025-10-22_at_18.59.50_3f528170_adu2uf.jpg' 
+            },
+            { 
+              name: 'Hafiz Mohammad Tahir', 
+              qualification: 'Fazil & M.A. (Urdu)', 
+              roleOrSubject: 'Teacher | 16+ Years Exp. | +91 9917788313', 
+              image: 'https://res.cloudinary.com/dadqwaqis/image/upload/v1761400260/WhatsApp_Image_2025-10-22_at_18.59.50_3f528170_adu2uf.jpg' 
+            },
+            { 
+              name: 'Hafiz Mohd Umruddin', 
+              qualification: 'Fazil', 
+              roleOrSubject: 'Teacher | 16+ Years Exp. | +91 9634878786', 
+              image: 'https://res.cloudinary.com/dadqwaqis/image/upload/v1761400260/WhatsApp_Image_2025-10-22_at_18.59.50_3f528170_adu2uf.jpg' 
+            }
           ],
         },
         {
-          name: 'Hadith Department',
+          name: 'Hifz, Qir’at & Tajweed',
           teachers: [
-            { name: 'Maulana Mohammad Tahir', qualification: 'Fazil-e-Hadith', roleOrSubject: 'Experience: 25 years' },
-            { name: 'Maulana Mohammad Asad', qualification: 'M.A. Hadith', roleOrSubject: 'Experience: 18 years' },
+            { 
+              name: 'Qari Muzammil Husain', 
+              qualification: 'Alim', 
+              roleOrSubject: 'Qari / Teacher | 43+ Years Exp. | +91 9719314254', 
+              image: 'https://res.cloudinary.com/dadqwaqis/image/upload/v1761400260/WhatsApp_Image_2025-10-22_at_18.59.50_3f528170_adu2uf.jpg' 
+            },
+            { 
+              name: 'Qari Sharif Ahmad', 
+              qualification: 'Fazil', 
+              roleOrSubject: 'Qari / Teacher | 20+ Years Exp. | +91 7454920196', 
+              image: 'https://res.cloudinary.com/dadqwaqis/image/upload/v1761400260/WhatsApp_Image_2025-10-22_at_18.59.50_3f528170_adu2uf.jpg' 
+            },
+            { 
+              name: 'Qari Mohd Ilyas', 
+              qualification: 'Fazil', 
+              roleOrSubject: 'Qari / Teacher | 25+ Years Exp. | +91 9997885335', 
+              image: 'https://res.cloudinary.com/dadqwaqis/image/upload/v1761400260/WhatsApp_Image_2025-10-22_at_18.59.50_3f528170_adu2uf.jpg' 
+            }
           ],
         },
         {
-          name: 'Fiqh & Islamic Law',
+          name: 'Modern Education (1-12 English Medium)',
           teachers: [
-            { name: 'Mufti Mohammad Rashid', qualification: 'Mufti, Darul Uloom', roleOrSubject: 'Experience: 22 years' },
-            { name: 'Maulana Mohammad Haneef', qualification: 'Fazil-e-Fiqh', roleOrSubject: 'Experience: 16 years' },
+            { 
+              name: 'Abdul Hafeez', 
+              qualification: 'M.A. (Edu.) & D.El.Ed', 
+              roleOrSubject: 'Teacher | 12+ Years Exp. | +91 9917726702', 
+              image: 'https://res.cloudinary.com/dadqwaqis/image/upload/v1761400260/WhatsApp_Image_2025-10-22_at_18.59.50_3f528170_adu2uf.jpg' 
+            },
+            { 
+              name: 'Mohd Ayyub', 
+              qualification: 'M.A. (Pol. Scie.) & D.El.Ed', 
+              roleOrSubject: 'Teacher | 12+ Years Exp. | +91 9012050035', 
+              image: 'https://res.cloudinary.com/dadqwaqis/image/upload/v1761400260/WhatsApp_Image_2025-10-22_at_18.59.50_3f528170_adu2uf.jpg' 
+            },
+            { 
+              name: 'Mohammad Danish', 
+              qualification: 'M.Sc. (I.T)', 
+              roleOrSubject: 'IT Teacher | 8+ Years Exp. | +91 9557757380', 
+              image: 'https://res.cloudinary.com/dadqwaqis/image/upload/v1761400260/WhatsApp_Image_2025-10-22_at_18.59.50_3f528170_adu2uf.jpg' 
+            },
+            { 
+              name: 'Javed Usmani', 
+              qualification: 'B.A (Arts)', 
+              roleOrSubject: 'Teacher | 2+ Years Exp. | +91 9837180718', 
+              image: 'https://res.cloudinary.com/dadqwaqis/image/upload/v1761400260/WhatsApp_Image_2025-10-22_at_18.59.50_3f528170_adu2uf.jpg' 
+            },
+            { 
+              name: 'Juned Raza', 
+              qualification: 'M.A (Islamic Std.) & B.lis (AMU)', 
+              roleOrSubject: 'Teacher | 2+ Years Exp. | +91 9084638928', 
+              image: 'https://res.cloudinary.com/dadqwaqis/image/upload/v1761400260/WhatsApp_Image_2025-10-22_at_18.59.50_3f528170_adu2uf.jpg' 
+            }
           ],
         },
         {
-          name: 'Arabic Language',
+          name: 'Administration & Support Staff',
           teachers: [
-            { name: 'Maulana Mohammad Salman', qualification: 'M.A. Arabic', roleOrSubject: 'Experience: 14 years' },
-            { name: 'Maulana Mohammad Farooq', qualification: 'Al-Azhar Graduate', roleOrSubject: 'Experience: 10 years' },
+            { 
+              name: 'Mazhar Ali Khan', 
+              qualification: 'Intermediate', 
+              roleOrSubject: 'Staff Member | 30+ Years Exp. | +91 6396731258', 
+              image: 'https://res.cloudinary.com/dadqwaqis/image/upload/v1761400260/WhatsApp_Image_2025-10-22_at_18.59.50_3f528170_adu2uf.jpg' 
+            },
+            { 
+              name: 'Jafar Ali', 
+              qualification: 'M.com & B.Ed.', 
+              roleOrSubject: 'Office Executive | +91 8273923976', 
+              image: 'https://res.cloudinary.com/dadqwaqis/image/upload/v1761400260/WhatsApp_Image_2025-10-22_at_18.59.50_3f528170_adu2uf.jpg' 
+            },
+            { 
+              name: 'Hafiz Tahseen Raza', 
+              qualification: 'Fazil (Adab)', 
+              roleOrSubject: 'Librarian | +91 9411291775', 
+              image: 'https://res.cloudinary.com/dadqwaqis/image/upload/v1761400260/WhatsApp_Image_2025-10-22_at_18.59.50_3f528170_adu2uf.jpg' 
+            }
           ],
-        },
+        }
       ],
     },
     'madarsa-jannat-ul-banaat': {
@@ -175,6 +308,17 @@ const TeachingStaff = () => {
         </div>
       </div>
 
+      {/* Cover Image (sirf madarsa-darul-loom ke liye) */}
+      {staff.coverImage && (
+        <div className="max-w-7xl mx-auto px-4 -mt-8 relative z-10">
+          <img
+            src={staff.coverImage}
+            alt={staff.institution}
+            className="w-full h-64 md:h-80 object-cover rounded-2xl shadow-2xl border-4 border-white"
+          />
+        </div>
+      )}
+
       {/* Content */}
       <div className="py-12">
         <div className="max-w-7xl mx-auto px-4">
@@ -202,6 +346,36 @@ const TeachingStaff = () => {
             <p className="text-gray-700">{staff.description}</p>
           </div>
 
+          {/* Leadership Section (sirf madarsa-darul-loom ke liye) */}
+          {staff.leadership && staff.leadership.length > 0 && (
+            <div className="mb-12">
+              <h2 className="font-serif text-3xl font-bold text-emerald-deep mb-6 text-center">Leadership</h2>
+              <div className="grid grid-cols-1 md:grid-cols-2 gap-6">
+                {staff.leadership.map((leader, index) => (
+                  <div key={index} className="bg-white rounded-2xl shadow-lg overflow-hidden flex flex-col md:flex-row">
+                    {leader.image && (
+                      <div className="md:w-48 h-48 md:h-auto bg-emerald-deep flex items-center justify-center">
+                        <img
+                          src={leader.image}
+                          alt={leader.name}
+                          className="w-40 h-40 object-cover rounded-full border-4 border-white shadow-md"
+                        />
+                      </div>
+                    )}
+                    <div className="p-6 flex-1">
+                      <h3 className="font-serif text-2xl font-bold text-emerald-deep">{leader.name}</h3>
+                      <p className="text-gold-primary font-semibold text-lg mt-1">{leader.designation}</p>
+                      <p className="text-gray-600 mt-3">{leader.qualification}</p>
+                      <div className="mt-4 bg-emerald-50 p-3 rounded-lg text-sm text-emerald-700">
+                        {leader.roleOrSubject}
+                      </div>
+                    </div>
+                  </div>
+                ))}
+              </div>
+            </div>
+          )}
+
           {/* Departments */}
           <div className="space-y-8">
             {staff.departments.map((dept, index) => (
@@ -212,16 +386,26 @@ const TeachingStaff = () => {
                 <div className="p-6">
                   <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-4">
                     {dept.teachers.map((teacher, tIndex) => (
-                      <div key={tIndex} className="bg-gray-50 rounded-lg p-4 border border-gray-100 hover:shadow-md transition-shadow">
-                        <div className="flex items-start gap-3 mb-2">
-                          <Award className="w-5 h-5 text-gold-primary flex-shrink-0 mt-0.5" />
-                          <div>
-                            <h4 className="font-medium text-emerald-deep leading-tight">{teacher.name}</h4>
+                      <div key={tIndex} className="bg-gray-50 rounded-xl p-5 border border-gray-100 hover:shadow-md transition-all duration-300">
+                        <div className="flex items-start gap-4">
+                          {teacher.image ? (
+                            <img
+                              src={teacher.image}
+                              alt={teacher.name}
+                              className="w-14 h-14 rounded-full object-cover border-2 border-emerald-200 flex-shrink-0"
+                            />
+                          ) : (
+                            <div className="w-14 h-14 bg-emerald-100 rounded-full flex items-center justify-center flex-shrink-0">
+                              <User className="w-8 h-8 text-emerald-deep" />
+                            </div>
+                          )}
+                          <div className="flex-1">
+                            <h4 className="font-medium text-emerald-deep leading-tight text-lg">{teacher.name}</h4>
                             <p className="text-gray-500 text-sm mt-1">{teacher.qualification}</p>
                           </div>
                         </div>
-                        <div className="bg-white px-3 py-2 rounded mt-3 border border-gray-100">
-                          <p className="text-emerald-deep/80 font-medium text-xs">{teacher.roleOrSubject}</p>
+                        <div className="mt-4 bg-white px-4 py-3 rounded-lg border border-gray-100 text-xs font-medium text-emerald-700">
+                          {teacher.roleOrSubject}
                         </div>
                       </div>
                     ))}
