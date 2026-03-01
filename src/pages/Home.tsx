@@ -413,6 +413,69 @@ const Home = () => {
         </div>
       </section>
 
+
+
+
+      {/* Poster Slider Section */}
+<section className="py-20 bg-gradient-to-b from-white to-emerald-light/20">
+  <div className="max-w-6xl mx-auto px-4">
+
+    {/* Header */}
+    <div className="text-center mb-12">
+      <p className="text-gold-primary font-urdu text-lg mb-2">
+        ہماری تقاریب
+      </p>
+      <h2 className="font-serif text-4xl font-bold text-emerald-deep">
+        Event Posters
+      </h2>
+    </div>
+
+    {/* Slider */}
+    <div className="relative w-full overflow-hidden rounded-2xl shadow-2xl">
+
+      <div className="flex overflow-x-auto snap-x snap-mandatory scroll-smooth">
+
+        {/* Poster 1 */}
+        <a href="/posters/poster1.jpg" target="_blank" className="min-w-full snap-center">
+          <img
+            src="/posters/poster1.jpg"
+            alt="Poster 1"
+            className="w-full h-[500px] object-contain bg-white"
+          />
+        </a>
+
+        {/* Poster 2 */}
+        <a href="/posters/poster2.jpg" target="_blank" className="min-w-full snap-center">
+          <img
+            src="/posters/poster2.jpg"
+            alt="Poster 2"
+            className="w-full h-[500px] object-contain bg-white"
+          />
+        </a>
+
+        {/* Poster 3 */}
+        <a href="/posters/poster3.jpg" target="_blank" className="min-w-full snap-center">
+          <img
+            src="/posters/poster3.jpg"
+            alt="Poster 3"
+            className="w-full h-[500px] object-contain bg-white"
+          />
+        </a>
+
+      </div>
+
+    </div>
+
+    <p className="text-center text-sm text-gray-500 mt-4">
+      👉 Swipe left/right to view posters. Click to open full size.
+    </p>
+
+  </div>
+</section>
+
+
+
+
       {/* CTA Section */}
       <section className="py-16 bg-emerald-deep pattern-bg">
         <div className="max-w-4xl mx-auto px-4 text-center">
