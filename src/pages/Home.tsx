@@ -246,7 +246,7 @@ const Home = () => {
         <div className="text-center">
           <div className="islamic-border rounded-lg overflow-hidden mb-4">
             <img
-              src="https://res.cloudinary.com/dadqwaqis/image/upload/v1761400260/WhatsApp_Image_2025-10-22_at_18.59.50_3f528170_adu2uf.jpg"
+              src="https://res.cloudinary.com/dadqwaqis/image/upload/v1761400560/Manager_sb_hye1dz.jpg"
               alt="Mohtamim Qari Zafruddin Sahib"
               className="w-full h-auto"
             />
