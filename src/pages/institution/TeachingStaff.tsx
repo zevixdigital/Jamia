@@ -42,7 +42,7 @@ const TeachingStaff = () => {
           designation: 'Principal',
           qualification: 'M.A. (Eco) & B.Ed (AMU)',
           roleOrSubject: '+91 9058840962 | aarifamu111@gmail.com',
-          image: 'https://res.cloudinary.com/dadqwaqis/image/upload/v1761400260/WhatsApp_Image_2025-10-22_at_18.59.50_3f528170_adu2uf.jpg'
+          
         },
         {
           name: 'Mufti Mohd Suhail',

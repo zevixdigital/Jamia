@@ -17,9 +17,9 @@ const PrincipalMessage = () => {
     'madarsa-darul-loom': {
       institution: 'Madarsa Darul Uloom Jamia Razvia',
       institutionUrdu: 'مدرسہ دارالعلوم جامعہ رضویہ',
-      name: 'Moulana Mohd Sharif',
-      qualification: 'Fazil-e-Darul Uloom Deoband, M.A. Arabic',
-      experience: '25+ years',
+      name: 'Mohd Aarif Tauheed',
+      qualification: ' M.A,(Eco)& B.Ed AMU NET Qualified' ,
+      experience: '5+ years',
       message: `Assalamu Alaikum Warahmatullahi Wabarakatuh,
 
 It is with great pleasure and humility that I welcome you to Madarsa Darul Uloom Jamia Razvia, an institution that has been a beacon of Islamic knowledge and spiritual guidance for over five decades.
