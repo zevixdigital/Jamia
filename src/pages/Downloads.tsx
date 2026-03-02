@@ -31,6 +31,14 @@ const Downloads = () => {
       link: "https://drive.google.com/file/d/1WnzXZvUIacQ8HiuE4jFkt_kbXBcOzOMK/view?usp=drivesdk",
     },
     {
+      name: "Teaching Staffs",
+      category: "admission",
+      size: "180 KB",
+      format: "PDF",
+      downloads: 0,
+      link: "/documents/scholarship-form.pdf",
+    },
+    {
       name: "Scholarship Application Form",
       category: "admission",
       size: "180 KB",
