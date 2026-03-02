@@ -42,18 +42,18 @@ const TeachingStaff = () => {
           designation: 'Principal',
           qualification: 'M.A. (Eco) & B.Ed (AMU)',
           roleOrSubject: '+91 9058840962 | aarifamu111@gmail.com',
-          
+          image: '👨‍🏫'   // Ab yahan emoji icon hai (image URL hata diya)
         },
         {
           name: 'Mufti Mohd Suhail',
           designation: 'Vice-Principal',
           qualification: 'Alim & M.A (Urdu)',
           roleOrSubject: '+91 8057861431 | suhelrazakhan1999@gmail.com',
-          image: 'https://res.cloudinary.com/dadqwaqis/image/upload/v1761400260/WhatsApp_Image_2025-10-22_at_18.59.50_3f528170_adu2uf.jpg'
+          image: '👨‍🏫'
         }
       ],
 
-      // Departments (Merged Image Data + Original Phone Numbers)
+      // Departments (Clean & Error-Free)
       departments: [
         {
           name: 'Dars-e-Nizami & Islamic Studies',
@@ -62,37 +62,37 @@ const TeachingStaff = () => {
               name: 'Molana Saleem Akhtar', 
               qualification: 'Fazil (Adab)', 
               roleOrSubject: 'Assistant Manager | +91 9997234176 | salimaktar7450@gmail.com', 
-              image: 'https://res.cloudinary.com/dadqwaqis/image/upload/v1761400260/WhatsApp_Image_2025-10-22_at_18.59.50_3f528170_adu2uf.jpg' 
+              image: '👨‍🏫'
             },
             { 
               name: 'Molana Mohd Saleet', 
               qualification: 'Fazil & M.A (Urdu)', 
               roleOrSubject: 'Teacher - Adab | +91 9012550383 | mohdslit50383@gmail.com', 
-              image: 'https://res.cloudinary.com/dadqwaqis/image/upload/v1761400260/WhatsApp_Image_2025-10-22_at_18.59.50_3f528170_adu2uf.jpg' 
+              image: '👨‍🏫'
             },
             { 
               name: 'Molana Mohd Arif', 
               qualification: 'Fazil & M.A (Urdu)', 
               roleOrSubject: 'Teacher - Hadees | +91 9457275575 | abunawaz2505@gmail.com', 
-              image: 'https://res.cloudinary.com/dadqwaqis/image/upload/v1761400260/WhatsApp_Image_2025-10-22_at_18.59.50_3f528170_adu2uf.jpg' 
+              image: '👨‍🏫'
             },
             { 
               name: 'Molana Qamar Muneer', 
               qualification: 'Fazil (Adab)', 
               roleOrSubject: 'Teacher - Arabic | +91 9536695479 | qamarmuneer98@gmail.com', 
-              image: 'https://res.cloudinary.com/dadqwaqis/image/upload/v1761400260/WhatsApp_Image_2025-10-22_at_18.59.50_3f528170_adu2uf.jpg' 
+              image: '👨‍🏫'
             },
             { 
               name: 'Hafiz Mohammad Tahir', 
               qualification: 'Fazil & M.A (Urdu)', 
               roleOrSubject: 'Teacher - Arabic | +91 9917788313 | mohdtahiraza0313@gmail.com', 
-              image: 'https://res.cloudinary.com/dadqwaqis/image/upload/v1761400260/WhatsApp_Image_2025-10-22_at_18.59.50_3f528170_adu2uf.jpg' 
+              image: '👨‍🏫'
             },
             { 
               name: 'Hafiz Mohd Umruddin', 
               qualification: 'Fazil (Adab)', 
               roleOrSubject: 'Teacher - Urdu | +91 9634878786 | mohdumruddin18@gmail.com', 
-              image: 'https://res.cloudinary.com/dadqwaqis/image/upload/v1761400260/WhatsApp_Image_2025-10-22_at_18.59.50_3f528170_adu2uf.jpg' 
+              image: '👨‍🏫'
             }
           ],
         },
@@ -103,19 +103,19 @@ const TeachingStaff = () => {
               name: 'Qari Muzammil Husain', 
               qualification: 'Aalim (Arabic)', 
               roleOrSubject: 'Teacher - Hifz | +91 9719314254 | muzammilhussain.7860000000@gmail.com', 
-              image: 'https://res.cloudinary.com/dadqwaqis/image/upload/v1761400260/WhatsApp_Image_2025-10-22_at_18.59.50_3f528170_adu2uf.jpg' 
+              image: '👨‍🏫'
             },
             { 
               name: 'Qari Sharif Ahmad', 
               qualification: 'Fazil (Persian)', 
               roleOrSubject: 'Teacher - Hifz | +91 7454920196', 
-              image: 'https://res.cloudinary.com/dadqwaqis/image/upload/v1761400260/WhatsApp_Image_2025-10-22_at_18.59.50_3f528170_adu2uf.jpg' 
+              image: '👨‍🏫'
             },
             { 
               name: 'Qari Mohd Ilyas', 
               qualification: 'Fazil (Adab)', 
               roleOrSubject: 'Teacher - Deeniyat | +91 9997885335 | qarimohdilyas786@gmail.com', 
-              image: 'https://res.cloudinary.com/dadqwaqis/image/upload/v1761400260/WhatsApp_Image_2025-10-22_at_18.59.50_3f528170_adu2uf.jpg' 
+              image: '👨‍🏫'
             }
           ],
         },
@@ -126,43 +126,43 @@ const TeachingStaff = () => {
               name: 'Mohammad Abdul Hafeez', 
               qualification: 'M.A (Education) & D.el.ed', 
               roleOrSubject: 'Teacher - English | +91 9917726702 | abdulhafiz702@gmail.com', 
-              image: 'https://res.cloudinary.com/dadqwaqis/image/upload/v1761400260/WhatsApp_Image_2025-10-22_at_18.59.50_3f528170_adu2uf.jpg' 
+              image: '👨‍🏫'
             },
             { 
               name: 'Mohd Ayyub', 
               qualification: 'M.A (Pol. Science) & D.el.ed', 
               roleOrSubject: 'Teacher - Social Science | +91 9012050035 | ayyubmohd07869@gmail.com', 
-              image: 'https://res.cloudinary.com/dadqwaqis/image/upload/v1761400260/WhatsApp_Image_2025-10-22_at_18.59.50_3f528170_adu2uf.jpg' 
+              image: '👨‍🏫'
             },
             { 
               name: 'Mohammad Danish', 
               qualification: 'M.Sc. (Infor. Technology)', 
               roleOrSubject: 'Teacher - Mathematics | +91 9557757380 | mohammeddanish50@gmail.com', 
-              image: 'https://res.cloudinary.com/dadqwaqis/image/upload/v1761400260/WhatsApp_Image_2025-10-22_at_18.59.50_3f528170_adu2uf.jpg' 
+              image: '👨‍🏫'
             },
             { 
               name: 'Javed Usmani', 
               qualification: 'B.A', 
               roleOrSubject: 'Teacher - Science | +91 9837180718 | pashasakib794@gmail.com', 
-              image: 'https://res.cloudinary.com/dadqwaqis/image/upload/v1761400260/WhatsApp_Image_2025-10-22_at_18.59.50_3f528170_adu2uf.jpg' 
+              image: '👨‍🏫'
             },
             { 
               name: 'Juned Raza', 
               qualification: 'M.A (Is.Std.) & B.Lis (AMU)', 
               roleOrSubject: 'Teacher - G.K & Computer | +91 9084638928 | junedraza03@gmail.com', 
-              image: 'https://res.cloudinary.com/dadqwaqis/image/upload/v1761400260/WhatsApp_Image_2025-10-22_at_18.59.50_3f528170_adu2uf.jpg' 
+              image: '👨‍🏫'
             },
             { 
               name: 'Molana Meiraj Alam', 
               qualification: 'M.A (Urdu) & B.Ed.', 
               roleOrSubject: 'Teacher - English & Computer | +91 9759058843 | m.misbahi092@gmail.com', 
-              image: 'https://res.cloudinary.com/dadqwaqis/image/upload/v1761400260/WhatsApp_Image_2025-10-22_at_18.59.50_3f528170_adu2uf.jpg' 
+              image: '👨‍🏫'
             },
             { 
               name: 'Mazhar Ali Khan', 
               qualification: 'Intermediate', 
               roleOrSubject: 'Teacher - Hindi | +91 6396731258 | mazharalikhan062@gmail.com', 
-              image: 'https://res.cloudinary.com/dadqwaqis/image/upload/v1761400260/WhatsApp_Image_2025-10-22_at_18.59.50_3f528170_adu2uf.jpg' 
+              image: '👨‍🏫'
             }
           ],
         },
@@ -173,13 +173,13 @@ const TeachingStaff = () => {
               name: 'Jafar Ali', 
               qualification: 'M.Com & B.Ed', 
               roleOrSubject: 'Office Executive | +91 8273923976 | jali92313@gmail.com', 
-              image: 'https://res.cloudinary.com/dadqwaqis/image/upload/v1761400260/WhatsApp_Image_2025-10-22_at_18.59.50_3f528170_adu2uf.jpg' 
+              image: '👨‍🏫'
             },
             { 
               name: 'Hafiz Tahseen Raza', 
               qualification: 'Fazil (Adab)', 
               roleOrSubject: 'Librarian | +91 9411291775 | tahseenraza9411@gmail.com', 
-              image: 'https://res.cloudinary.com/dadqwaqis/image/upload/v1761400260/WhatsApp_Image_2025-10-22_at_18.59.50_3f528170_adu2uf.jpg' 
+              image: '👨‍🏫'
             }
           ],
         }
