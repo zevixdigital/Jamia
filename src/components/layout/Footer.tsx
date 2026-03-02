@@ -8,6 +8,7 @@ const Footer = () => {
     { name: 'Admission', path: '/admission' },
     { name: 'Contact', path: '/contact' },
     { name: 'Donation', path: '/donation' },
+    { name: 'Verify-certificate', path: '/certificates' },
   ];
 
   const institutions = [

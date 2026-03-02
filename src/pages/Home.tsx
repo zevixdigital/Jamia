@@ -571,118 +571,127 @@ const Home = () => {
 
 
 
-      {/* Events Section */}
-<section className="py-24 bg-gradient-to-b from-white to-emerald-light/10">
-  <div className="max-w-7xl mx-auto px-4">
+{/* Events Section */}
+      <section className="py-24 bg-gradient-to-b from-white to-emerald-50">
+        <div className="max-w-7xl mx-auto px-4 sm:px-6">
 
-    {/* Header */}
-    <div className="text-center mb-16">
-      <h2 className="font-serif text-5xl font-bold text-emerald-deep">
-        Events
-      </h2>
-      <div className="w-24 h-1 bg-gold-primary mx-auto mt-4 rounded-full"></div>
-      <p className="text-gray-600 mt-6 max-w-2xl mx-auto">
-        Explore our recent academic activities, prize distributions,
-        staff meetings and institutional events.
-      </p>
-    </div>
-
-    {/* Slider */}
-    <div className="relative overflow-hidden">
-
-      <div className="flex overflow-x-auto snap-x snap-mandatory scroll-smooth gap-8 pb-4">
-
-        {/* Event 1 */}
-        <div className="min-w-full md:min-w-[70%] snap-center relative group rounded-2xl overflow-hidden shadow-2xl">
-          <a href="https://res.cloudinary.com/dadqwaqis/image/upload/v1772386715/WhatsApp_Image_2026-02-26_at_2.44.55_PM_1_gio1tb.jpg" target="_blank">
-            <img
-              src="https://res.cloudinary.com/dadqwaqis/image/upload/v1772386715/WhatsApp_Image_2026-02-26_at_2.44.55_PM_1_gio1tb.jpg"
-              alt="Madarsa Toppers"
-              className="w-full h-[520px] object-cover transition duration-500 group-hover:scale-105"
-            />
-          </a>
-
-          {/* Overlay */}
-          <div className="absolute inset-0 bg-gradient-to-t from-black/80 via-black/40 to-transparent flex flex-col justify-end p-8">
-            <h3 className="text-white text-3xl font-bold">
-               Staff Meeting
-            </h3>
-            <p className="text-gray-200 mt-2">
-                Darul Uloom Jamia Razvia – Academic Planning Session
+          {/* Header */}
+          <div className="text-center mb-16">
+            <h2 className="font-serif text-4xl md:text-5xl font-bold text-emerald-deep">
+              Events
+            </h2>
+            <div className="w-24 h-1 bg-gold-primary mx-auto mt-4 rounded-full"></div>
+            <p className="text-gray-600 mt-6 max-w-2xl mx-auto text-lg">
+              Explore our recent academic activities, prize distributions,
+              staff meetings and institutional events.
             </p>
-            <a
-              href="https://res.cloudinary.com/dadqwaqis/image/upload/v1772386715/WhatsApp_Image_2026-02-26_at_2.44.55_PM_1_gio1tb.jpg"
-              target="_blank"
-              className="mt-4 inline-block bg-gold-primary text-white px-5 py-2 rounded-full text-sm font-semibold hover:bg-emerald-deep transition"
-            >
-              View Full Poster
-            </a>
           </div>
-        </div>
 
-        {/* Event 2 */}
-        <div className="min-w-full md:min-w-[70%] snap-center relative group rounded-2xl overflow-hidden shadow-2xl">
-          <a href="https://res.cloudinary.com/dadqwaqis/image/upload/v1772386715/IMG-20260226-WA0005_n0hedh.jpg" target="_blank">
-            <img
-              src="https://res.cloudinary.com/dadqwaqis/image/upload/v1772386715/IMG-20260226-WA0005_n0hedh.jpg"
-              alt="Staff Meeting"
-              className="w-full h-[520px] object-cover transition duration-500 group-hover:scale-105"
-            />
-          </a>
+          {/* Slider */}
+          <div className="relative overflow-hidden">
+            {/* Added classes to hide the default browser scrollbar for a cleaner look */}
+            <div className="flex overflow-x-auto snap-x snap-mandatory scroll-smooth gap-6 pb-8 [&::-webkit-scrollbar]:hidden [-ms-overflow-style:none] [scrollbar-width:none]">
 
-          <div className="absolute inset-0 bg-gradient-to-t from-black/80 via-black/40 to-transparent flex flex-col justify-end p-8">
-            <h3 className="text-white text-3xl font-bold">
-              Annual Prize Distribution
-            </h3>
-            <p className="text-gray-200 mt-2">
-              Madarsa Toppers – Academic Year 2025-26
-            </p>
-            <a
-              href="https://res.cloudinary.com/dadqwaqis/image/upload/v1772386715/IMG-20260226-WA0005_n0hedh.jpg"
-              target="_blank"
-              className="mt-4 inline-block bg-gold-primary text-white px-5 py-2 rounded-full text-sm font-semibold hover:bg-emerald-deep transition"
-            >
-              View Full Poster
-            </a>
+              {/* Event 1 */}
+              <div className="min-w-[90vw] md:min-w-[65%] lg:min-w-[55%] snap-center relative group rounded-3xl overflow-hidden shadow-xl border border-gray-100/20">
+                <a href="https://res.cloudinary.com/dadqwaqis/image/upload/v1772386715/WhatsApp_Image_2026-02-26_at_2.44.55_PM_1_gio1tb.jpg" target="_blank" rel="noopener noreferrer">
+                  <img
+                    src="https://res.cloudinary.com/dadqwaqis/image/upload/v1772386715/WhatsApp_Image_2026-02-26_at_2.44.55_PM_1_gio1tb.jpg"
+                    alt="Madarsa Toppers"
+                    className="w-full h-[400px] md:h-[500px] object-cover transition-transform duration-700 group-hover:scale-105"
+                  />
+                </a>
+
+                {/* Overlay */}
+                <div className="absolute inset-0 bg-gradient-to-t from-gray-900 via-gray-900/40 to-transparent pointer-events-none flex flex-col justify-end p-6 md:p-10">
+                  <div className="transform transition-transform duration-500 group-hover:-translate-y-2 pointer-events-auto">
+                    <h3 className="text-white text-2xl md:text-4xl font-serif font-bold drop-shadow-lg">
+                       Staff Meeting
+                    </h3>
+                    <p className="text-gray-200 mt-3 md:text-lg max-w-xl drop-shadow-md">
+                       Darul Uloom Jamia Razvia – Academic Planning Session
+                    </p>
+                    <a
+                      href="https://res.cloudinary.com/dadqwaqis/image/upload/v1772386715/WhatsApp_Image_2026-02-26_at_2.44.55_PM_1_gio1tb.jpg"
+                      target="_blank"
+                      rel="noopener noreferrer"
+                      className="mt-6 inline-flex items-center justify-center bg-gold-primary/90 backdrop-blur-sm text-white px-6 py-2.5 rounded-full text-sm font-semibold hover:bg-gold-primary hover:scale-105 transition-all duration-300 shadow-lg"
+                    >
+                      View Full Poster
+                    </a>
+                  </div>
+                </div>
+              </div>
+
+              {/* Event 2 */}
+              <div className="min-w-[90vw] md:min-w-[65%] lg:min-w-[55%] snap-center relative group rounded-3xl overflow-hidden shadow-xl border border-gray-100/20">
+                <a href="https://res.cloudinary.com/dadqwaqis/image/upload/v1772386715/IMG-20260226-WA0005_n0hedh.jpg" target="_blank" rel="noopener noreferrer">
+                  <img
+                    src="https://res.cloudinary.com/dadqwaqis/image/upload/v1772386715/IMG-20260226-WA0005_n0hedh.jpg"
+                    alt="Staff Meeting"
+                    className="w-full h-[400px] md:h-[500px] object-cover transition-transform duration-700 group-hover:scale-105"
+                  />
+                </a>
+
+                <div className="absolute inset-0 bg-gradient-to-t from-gray-900 via-gray-900/40 to-transparent pointer-events-none flex flex-col justify-end p-6 md:p-10">
+                  <div className="transform transition-transform duration-500 group-hover:-translate-y-2 pointer-events-auto">
+                    <h3 className="text-white text-2xl md:text-4xl font-serif font-bold drop-shadow-lg">
+                      Annual Prize Distribution
+                    </h3>
+                    <p className="text-gray-200 mt-3 md:text-lg max-w-xl drop-shadow-md">
+                      Madarsa Toppers – Academic Year 2025-26
+                    </p>
+                    <a
+                      href="https://res.cloudinary.com/dadqwaqis/image/upload/v1772386715/IMG-20260226-WA0005_n0hedh.jpg"
+                      target="_blank"
+                      rel="noopener noreferrer"
+                      className="mt-6 inline-flex items-center justify-center bg-gold-primary/90 backdrop-blur-sm text-white px-6 py-2.5 rounded-full text-sm font-semibold hover:bg-gold-primary hover:scale-105 transition-all duration-300 shadow-lg"
+                    >
+                      View Full Poster
+                    </a>
+                  </div>
+                </div>
+              </div>
+
+              {/* Event 3 */}
+              <div className="min-w-[90vw] md:min-w-[65%] lg:min-w-[55%] snap-center relative group rounded-3xl overflow-hidden shadow-xl border border-gray-100/20">
+                <a href="https://res.cloudinary.com/dadqwaqis/image/upload/v1772386715/IMG-20260226-WA0005_n0hedh.jpg" target="_blank" rel="noopener noreferrer">
+                  <img
+                    src="https://res.cloudinary.com/dadqwaqis/image/upload/v1772386715/IMG-20260226-WA0005_n0hedh.jpg"
+                    alt="Community Event"
+                    className="w-full h-[400px] md:h-[500px] object-cover transition-transform duration-700 group-hover:scale-105"
+                  />
+                </a>
+
+                <div className="absolute inset-0 bg-gradient-to-t from-gray-900 via-gray-900/40 to-transparent pointer-events-none flex flex-col justify-end p-6 md:p-10">
+                  <div className="transform transition-transform duration-500 group-hover:-translate-y-2 pointer-events-auto">
+                    <h3 className="text-white text-2xl md:text-4xl font-serif font-bold drop-shadow-lg">
+                      Community Gathering
+                    </h3>
+                    <p className="text-gray-200 mt-3 md:text-lg max-w-xl drop-shadow-md">
+                      Educational & Institutional Development Program
+                    </p>
+                    <a
+                      href="https://res.cloudinary.com/dadqwaqis/image/upload/v1772386715/IMG-20260226-WA0005_n0hedh.jpg"
+                      target="_blank"
+                      rel="noopener noreferrer"
+                      className="mt-6 inline-flex items-center justify-center bg-gold-primary/90 backdrop-blur-sm text-white px-6 py-2.5 rounded-full text-sm font-semibold hover:bg-gold-primary hover:scale-105 transition-all duration-300 shadow-lg"
+                    >
+                      View Full Poster
+                    </a>
+                  </div>
+                </div>
+              </div>
+
+            </div>
           </div>
+
+          <p className="text-center text-sm font-medium text-emerald-deep/60 mt-4 flex items-center justify-center gap-2">
+            <span className="hidden md:inline">←</span> Swipe to explore <span className="hidden md:inline">→</span>
+          </p>
+
         </div>
-
-        {/* Event 3 */}
-        <div className="min-w-full md:min-w-[70%] snap-center relative group rounded-2xl overflow-hidden shadow-2xl">
-          <a href="https://res.cloudinary.com/dadqwaqis/image/upload/v1772386715/IMG-20260226-WA0005_n0hedh.jpg" target="_blank">
-            <img
-              src="https://res.cloudinary.com/dadqwaqis/image/upload/v1772386715/IMG-20260226-WA0005_n0hedh.jpg"
-              alt="Community Event"
-              className="w-full h-[520px] object-cover transition duration-500 group-hover:scale-105"
-            />
-          </a>
-
-          <div className="absolute inset-0 bg-gradient-to-t from-black/80 via-black/40 to-transparent flex flex-col justify-end p-8">
-            <h3 className="text-white text-3xl font-bold">
-              Community Gathering
-            </h3>
-            <p className="text-gray-200 mt-2">
-              Educational & Institutional Development Program
-            </p>
-            <a
-              href="https://res.cloudinary.com/dadqwaqis/image/upload/v1772386715/IMG-20260226-WA0005_n0hedh.jpg"
-              target="_blank"
-              className="mt-4 inline-block bg-gold-primary text-white px-5 py-2 rounded-full text-sm font-semibold hover:bg-emerald-deep transition"
-            >
-              View Full Poster
-            </a>
-          </div>
-        </div>
-
-      </div>
-    </div>
-
-    <p className="text-center text-sm text-gray-500 mt-8">
-      👉 Swipe left/right to explore more events.
-    </p>
-
-  </div>
-</section>
+      </section>
 
 
 {/* Our Philosophy Section - Ultra Premium Design */}

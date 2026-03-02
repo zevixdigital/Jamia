@@ -70,7 +70,12 @@ const Admission = () => {
   ];
 
   const forms = [
-    { name: 'Admission Form 2025-26', size: '245 KB', format: 'PDF' },
+    {
+      name: 'Admission Form 2025-26',
+      size: '427 KB',
+      format: 'PDF',
+      url: 'https://drive.google.com/uc?export=download&id=1WnzXZvUIacQ8HiuE4jFkt_kbXBcOzOMK',
+    },
     { name: 'Scholarship Application Form', size: '180 KB', format: 'PDF' },
     { name: 'Hostel Application Form', size: '156 KB', format: 'PDF' },
     { name: 'Medical Fitness Certificate', size: '120 KB', format: 'PDF' },
@@ -138,7 +143,6 @@ const Admission = () => {
                   </div>
                 ))}
               </div>
-
               {/* Important Dates */}
               <div className="bg-emerald-light/30 rounded-lg p-6 mt-8">
                 <h3 className="font-serif text-xl font-bold text-emerald-deep mb-4 flex items-center gap-2">
@@ -234,10 +238,23 @@ const Admission = () => {
                         <p className="text-gray-500 text-sm">{form.format} • {form.size}</p>
                       </div>
                     </div>
-                    <button className="flex items-center gap-2 px-4 py-2 bg-emerald-deep text-white rounded-md hover:bg-emerald-medium transition-colors">
-                      <Download className="w-4 h-4" />
-                      Download
-                    </button>
+
+                    {form.url ? (
+                      <a
+                        href={form.url}
+                        target="_blank"
+                        rel="noopener noreferrer"
+                        className="flex items-center gap-2 px-4 py-2 bg-emerald-deep text-white rounded-md hover:bg-emerald-medium transition-colors"
+                      >
+                        <Download className="w-4 h-4" />
+                        Download
+                      </a>
+                    ) : (
+                      <button className="flex items-center gap-2 px-4 py-2 bg-emerald-deep text-white rounded-md hover:bg-emerald-medium transition-colors opacity-50 cursor-not-allowed">
+                        <Download className="w-4 h-4" />
+                        Download
+                      </button>
+                    )}
                   </div>
                 ))}
               </div>

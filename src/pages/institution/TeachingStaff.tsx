@@ -31,73 +31,67 @@ const TeachingStaff = () => {
     'madarsa-darul-loom': {
       institution: 'Madarsa Darul Uloom Jamia Razvia',
       institutionUrdu: 'مدرسہ دارالعلوم جامعہ رضویہ',
-      totalStaff: '45+',
-      qualifiedStaff: '35+',
+      totalStaff: '20',
+      qualifiedStaff: '18+',
       description: 'Our teaching staff includes highly qualified scholars, Muftis, Qaris and experienced modern education teachers dedicated to Dars-e-Nizami, Hifz, Qir’at and 1-12th Class (English Medium).',
 
       // Leadership (Principal & Vice-Principal)
       leadership: [
         {
-          name: 'Mr. Mohd Arif',
+          name: 'Mohd Aarif Tauheed',
           designation: 'Principal',
-          qualification: 'B.Ed. (AMU), NET Qualified',
-          roleOrSubject: '5+ Years Exp. | +91 9058840962',
+          qualification: 'M.A. (Eco) & B.Ed (AMU)',
+          roleOrSubject: '+91 9058840962 | aarifamu111@gmail.com',
           image: 'https://res.cloudinary.com/dadqwaqis/image/upload/v1761400260/WhatsApp_Image_2025-10-22_at_18.59.50_3f528170_adu2uf.jpg'
         },
         {
           name: 'Mufti Mohd Suhail',
           designation: 'Vice-Principal',
           qualification: 'Alim & M.A (Urdu)',
-          roleOrSubject: '3+ Years Exp. | +91 8057861431',
+          roleOrSubject: '+91 8057861431 | suhelrazakhan1999@gmail.com',
           image: 'https://res.cloudinary.com/dadqwaqis/image/upload/v1761400260/WhatsApp_Image_2025-10-22_at_18.59.50_3f528170_adu2uf.jpg'
         }
       ],
 
-      // Departments (sab data bilkul exact + image)
+      // Departments (Merged Image Data + Original Phone Numbers)
       departments: [
         {
           name: 'Dars-e-Nizami & Islamic Studies',
           teachers: [
             { 
-              name: 'Molana Saleem Akhtar Misbahi', 
+              name: 'Molana Saleem Akhtar', 
               qualification: 'Fazil (Adab)', 
-              roleOrSubject: 'Teacher | 20+ Years Exp. | +91 9997234176', 
+              roleOrSubject: 'Assistant Manager | +91 9997234176 | salimaktar7450@gmail.com', 
               image: 'https://res.cloudinary.com/dadqwaqis/image/upload/v1761400260/WhatsApp_Image_2025-10-22_at_18.59.50_3f528170_adu2uf.jpg' 
             },
             { 
-              name: 'Molana Mohd Saleet Misbah', 
+              name: 'Molana Mohd Saleet', 
               qualification: 'Fazil & M.A (Urdu)', 
-              roleOrSubject: 'Teacher | 10+ Years Exp. | +91 9012550383', 
+              roleOrSubject: 'Teacher - Adab | +91 9012550383 | mohdslit50383@gmail.com', 
               image: 'https://res.cloudinary.com/dadqwaqis/image/upload/v1761400260/WhatsApp_Image_2025-10-22_at_18.59.50_3f528170_adu2uf.jpg' 
             },
             { 
               name: 'Molana Mohd Arif', 
-              qualification: 'Fazil & M.A. (Urdu)', 
-              roleOrSubject: 'Teacher | 7+ Years Exp. | +91 9457275575', 
+              qualification: 'Fazil & M.A (Urdu)', 
+              roleOrSubject: 'Teacher - Hadees | +91 9457275575 | abunawaz2505@gmail.com', 
               image: 'https://res.cloudinary.com/dadqwaqis/image/upload/v1761400260/WhatsApp_Image_2025-10-22_at_18.59.50_3f528170_adu2uf.jpg' 
             },
             { 
               name: 'Molana Qamar Muneer', 
-              qualification: 'Fazil', 
-              roleOrSubject: 'Teacher | +91 9536695479', 
-              image: 'https://res.cloudinary.com/dadqwaqis/image/upload/v1761400260/WhatsApp_Image_2025-10-22_at_18.59.50_3f528170_adu2uf.jpg' 
-            },
-            { 
-              name: 'Molana Meiraj Alam', 
-              qualification: 'M.A (Urdu) B.Ed', 
-              roleOrSubject: 'Teacher | 2+ Years Exp. | +91 9759058843', 
+              qualification: 'Fazil (Adab)', 
+              roleOrSubject: 'Teacher - Arabic | +91 9536695479 | qamarmuneer98@gmail.com', 
               image: 'https://res.cloudinary.com/dadqwaqis/image/upload/v1761400260/WhatsApp_Image_2025-10-22_at_18.59.50_3f528170_adu2uf.jpg' 
             },
             { 
               name: 'Hafiz Mohammad Tahir', 
-              qualification: 'Fazil & M.A. (Urdu)', 
-              roleOrSubject: 'Teacher | 16+ Years Exp. | +91 9917788313', 
+              qualification: 'Fazil & M.A (Urdu)', 
+              roleOrSubject: 'Teacher - Arabic | +91 9917788313 | mohdtahiraza0313@gmail.com', 
               image: 'https://res.cloudinary.com/dadqwaqis/image/upload/v1761400260/WhatsApp_Image_2025-10-22_at_18.59.50_3f528170_adu2uf.jpg' 
             },
             { 
               name: 'Hafiz Mohd Umruddin', 
-              qualification: 'Fazil', 
-              roleOrSubject: 'Teacher | 16+ Years Exp. | +91 9634878786', 
+              qualification: 'Fazil (Adab)', 
+              roleOrSubject: 'Teacher - Urdu | +91 9634878786 | mohdumruddin18@gmail.com', 
               image: 'https://res.cloudinary.com/dadqwaqis/image/upload/v1761400260/WhatsApp_Image_2025-10-22_at_18.59.50_3f528170_adu2uf.jpg' 
             }
           ],
@@ -107,20 +101,20 @@ const TeachingStaff = () => {
           teachers: [
             { 
               name: 'Qari Muzammil Husain', 
-              qualification: 'Alim', 
-              roleOrSubject: 'Qari / Teacher | 43+ Years Exp. | +91 9719314254', 
+              qualification: 'Aalim (Arabic)', 
+              roleOrSubject: 'Teacher - Hifz | +91 9719314254 | muzammilhussain.7860000000@gmail.com', 
               image: 'https://res.cloudinary.com/dadqwaqis/image/upload/v1761400260/WhatsApp_Image_2025-10-22_at_18.59.50_3f528170_adu2uf.jpg' 
             },
             { 
               name: 'Qari Sharif Ahmad', 
-              qualification: 'Fazil', 
-              roleOrSubject: 'Qari / Teacher | 20+ Years Exp. | +91 7454920196', 
+              qualification: 'Fazil (Persian)', 
+              roleOrSubject: 'Teacher - Hifz | +91 7454920196', 
               image: 'https://res.cloudinary.com/dadqwaqis/image/upload/v1761400260/WhatsApp_Image_2025-10-22_at_18.59.50_3f528170_adu2uf.jpg' 
             },
             { 
               name: 'Qari Mohd Ilyas', 
-              qualification: 'Fazil', 
-              roleOrSubject: 'Qari / Teacher | 25+ Years Exp. | +91 9997885335', 
+              qualification: 'Fazil (Adab)', 
+              roleOrSubject: 'Teacher - Deeniyat | +91 9997885335 | qarimohdilyas786@gmail.com', 
               image: 'https://res.cloudinary.com/dadqwaqis/image/upload/v1761400260/WhatsApp_Image_2025-10-22_at_18.59.50_3f528170_adu2uf.jpg' 
             }
           ],
@@ -129,33 +123,45 @@ const TeachingStaff = () => {
           name: 'Modern Education (1-12 English Medium)',
           teachers: [
             { 
-              name: 'Abdul Hafeez', 
-              qualification: 'M.A. (Edu.) & D.El.Ed', 
-              roleOrSubject: 'Teacher | 12+ Years Exp. | +91 9917726702', 
+              name: 'Mohammad Abdul Hafeez', 
+              qualification: 'M.A (Education) & D.el.ed', 
+              roleOrSubject: 'Teacher - English | +91 9917726702 | abdulhafiz702@gmail.com', 
               image: 'https://res.cloudinary.com/dadqwaqis/image/upload/v1761400260/WhatsApp_Image_2025-10-22_at_18.59.50_3f528170_adu2uf.jpg' 
             },
             { 
               name: 'Mohd Ayyub', 
-              qualification: 'M.A. (Pol. Scie.) & D.El.Ed', 
-              roleOrSubject: 'Teacher | 12+ Years Exp. | +91 9012050035', 
+              qualification: 'M.A (Pol. Science) & D.el.ed', 
+              roleOrSubject: 'Teacher - Social Science | +91 9012050035 | ayyubmohd07869@gmail.com', 
               image: 'https://res.cloudinary.com/dadqwaqis/image/upload/v1761400260/WhatsApp_Image_2025-10-22_at_18.59.50_3f528170_adu2uf.jpg' 
             },
             { 
               name: 'Mohammad Danish', 
-              qualification: 'M.Sc. (I.T)', 
-              roleOrSubject: 'IT Teacher | 8+ Years Exp. | +91 9557757380', 
+              qualification: 'M.Sc. (Infor. Technology)', 
+              roleOrSubject: 'Teacher - Mathematics | +91 9557757380 | mohammeddanish50@gmail.com', 
               image: 'https://res.cloudinary.com/dadqwaqis/image/upload/v1761400260/WhatsApp_Image_2025-10-22_at_18.59.50_3f528170_adu2uf.jpg' 
             },
             { 
               name: 'Javed Usmani', 
-              qualification: 'B.A (Arts)', 
-              roleOrSubject: 'Teacher | 2+ Years Exp. | +91 9837180718', 
+              qualification: 'B.A', 
+              roleOrSubject: 'Teacher - Science | +91 9837180718 | pashasakib794@gmail.com', 
               image: 'https://res.cloudinary.com/dadqwaqis/image/upload/v1761400260/WhatsApp_Image_2025-10-22_at_18.59.50_3f528170_adu2uf.jpg' 
             },
             { 
               name: 'Juned Raza', 
-              qualification: 'M.A (Islamic Std.) & B.lis (AMU)', 
-              roleOrSubject: 'Teacher | 2+ Years Exp. | +91 9084638928', 
+              qualification: 'M.A (Is.Std.) & B.Lis (AMU)', 
+              roleOrSubject: 'Teacher - G.K & Computer | +91 9084638928 | junedraza03@gmail.com', 
+              image: 'https://res.cloudinary.com/dadqwaqis/image/upload/v1761400260/WhatsApp_Image_2025-10-22_at_18.59.50_3f528170_adu2uf.jpg' 
+            },
+            { 
+              name: 'Molana Meiraj Alam', 
+              qualification: 'M.A (Urdu) & B.Ed.', 
+              roleOrSubject: 'Teacher - English & Computer | +91 9759058843 | m.misbahi092@gmail.com', 
+              image: 'https://res.cloudinary.com/dadqwaqis/image/upload/v1761400260/WhatsApp_Image_2025-10-22_at_18.59.50_3f528170_adu2uf.jpg' 
+            },
+            { 
+              name: 'Mazhar Ali Khan', 
+              qualification: 'Intermediate', 
+              roleOrSubject: 'Teacher - Hindi | +91 6396731258 | mazharalikhan062@gmail.com', 
               image: 'https://res.cloudinary.com/dadqwaqis/image/upload/v1761400260/WhatsApp_Image_2025-10-22_at_18.59.50_3f528170_adu2uf.jpg' 
             }
           ],
@@ -164,21 +170,15 @@ const TeachingStaff = () => {
           name: 'Administration & Support Staff',
           teachers: [
             { 
-              name: 'Mazhar Ali Khan', 
-              qualification: 'Intermediate', 
-              roleOrSubject: 'Staff Member | 30+ Years Exp. | +91 6396731258', 
-              image: 'https://res.cloudinary.com/dadqwaqis/image/upload/v1761400260/WhatsApp_Image_2025-10-22_at_18.59.50_3f528170_adu2uf.jpg' 
-            },
-            { 
               name: 'Jafar Ali', 
-              qualification: 'M.com & B.Ed.', 
-              roleOrSubject: 'Office Executive | +91 8273923976', 
+              qualification: 'M.Com & B.Ed', 
+              roleOrSubject: 'Office Executive | +91 8273923976 | jali92313@gmail.com', 
               image: 'https://res.cloudinary.com/dadqwaqis/image/upload/v1761400260/WhatsApp_Image_2025-10-22_at_18.59.50_3f528170_adu2uf.jpg' 
             },
             { 
               name: 'Hafiz Tahseen Raza', 
               qualification: 'Fazil (Adab)', 
-              roleOrSubject: 'Librarian | +91 9411291775', 
+              roleOrSubject: 'Librarian | +91 9411291775 | tahseenraza9411@gmail.com', 
               image: 'https://res.cloudinary.com/dadqwaqis/image/upload/v1761400260/WhatsApp_Image_2025-10-22_at_18.59.50_3f528170_adu2uf.jpg' 
             }
           ],
@@ -186,50 +186,50 @@ const TeachingStaff = () => {
       ],
     },
     'madarsa-jannat-ul-banaat': {
-  institution: 'Madarsa Jannat-ul-Banaat Barkate Fatima',
-  institutionUrdu: 'مدرسہ جنت البنات',
-  totalStaff: '16',
-  qualifiedStaff: '15+',
-  description: 'Female teaching staff with qualifications from renowned Islamic and modern institutions, dedicated to educating our sisters.',
-  departments: [
-    {
-      name: 'Administration',
-      teachers: [
-        { name: 'Shaista Bi', qualification: 'M.A (English)', roleOrSubject: 'Principal | Subject: Science' },
-        { name: 'Aalima Muniba Bi', qualification: 'Kamil (Arabic)', roleOrSubject: 'Vice Principal | Subject: Hadees' },
-        { name: 'Ghazala Naaz', qualification: 'M.A (History)', roleOrSubject: 'Office Attendant' },
+      institution: 'Madarsa Jannat-ul-Banaat Barkate Fatima',
+      institutionUrdu: 'مدرسہ جنت البنات',
+      totalStaff: '16',
+      qualifiedStaff: '15+',
+      description: 'Female teaching staff with qualifications from renowned Islamic and modern institutions, dedicated to educating our sisters.',
+      departments: [
+        {
+          name: 'Administration',
+          teachers: [
+            { name: 'Shaista Bi', qualification: 'M.A (English)', roleOrSubject: 'Principal | Subject: Science' },
+            { name: 'Aalima Muniba Bi', qualification: 'Kamil (Arabic)', roleOrSubject: 'Vice Principal | Subject: Hadees' },
+            { name: 'Ghazala Naaz', qualification: 'M.A (History)', roleOrSubject: 'Office Attendant' },
+          ],
+        },
+        {
+          name: 'Islamic Studies & Theology',
+          teachers: [
+            { name: 'Aalima Anjum Fatima', qualification: 'Kamil (Arabic)', roleOrSubject: 'Teacher | Subject: Tafaseer' },
+            { name: 'Aalima Ayesha Bi', qualification: 'Kamil (Arabic) & B.A', roleOrSubject: 'Teacher | Subject: Mantiq' },
+            { name: 'Aalima Nikhat Fatima', qualification: 'Aalim', roleOrSubject: 'Teacher | Subject: Nahw' },
+            { name: 'Aashiqana Barkati', qualification: 'Aalim (Arabic)', roleOrSubject: 'Teacher | Subject: Deeniyat' },
+          ],
+        },
+        {
+          name: 'Languages (Arabic, Persian & Urdu)',
+          teachers: [
+            { name: 'Aalima Phool Shadma', qualification: 'Kamil (Arabic) & B.A', roleOrSubject: 'Teacher | Subject: Arabic' },
+            { name: 'Aalima Naziya Bi', qualification: 'Aalim & B.A', roleOrSubject: 'Teacher | Subject: Persian' },
+            { name: 'Aalima Samiya Bi', qualification: 'Aalim', roleOrSubject: 'Teacher | Subject: Adab' },
+            { name: 'Hafsa Barkati', qualification: 'Aalim (Arabic)', roleOrSubject: 'Teacher | Subject: Urdu' },
+            { name: 'Nargis', qualification: 'B.A (Urdu)', roleOrSubject: 'Teacher | Subject: Arabic' },
+          ],
+        },
+        {
+          name: 'Modern Subjects',
+          teachers: [
+            { name: 'Naseem Jahan', qualification: 'M.A (English, Sociology, Political Science)', roleOrSubject: 'Teacher | Subject: English' },
+            { name: 'Anam Kabeer', qualification: 'M.com (Accounts)', roleOrSubject: 'Teacher | Subject: Mathematics' },
+            { name: 'Shahana', qualification: 'M.A (Political Science)', roleOrSubject: 'Teacher | Subject: Social Science' },
+            { name: 'Shabeena Bi', qualification: 'M.A (Theology)', roleOrSubject: 'Teacher | Subject: General Knowledge' },
+          ],
+        },
       ],
     },
-    {
-      name: 'Islamic Studies & Theology',
-      teachers: [
-        { name: 'Aalima Anjum Fatima', qualification: 'Kamil (Arabic)', roleOrSubject: 'Teacher | Subject: Tafaseer' },
-        { name: 'Aalima Ayesha Bi', qualification: 'Kamil (Arabic) & B.A', roleOrSubject: 'Teacher | Subject: Mantiq' },
-        { name: 'Aalima Nikhat Fatima', qualification: 'Aalim', roleOrSubject: 'Teacher | Subject: Nahw' },
-        { name: 'Aashiqana Barkati', qualification: 'Aalim (Arabic)', roleOrSubject: 'Teacher | Subject: Deeniyat' },
-      ],
-    },
-    {
-      name: 'Languages (Arabic, Persian & Urdu)',
-      teachers: [
-        { name: 'Aalima Phool Shadma', qualification: 'Kamil (Arabic) & B.A', roleOrSubject: 'Teacher | Subject: Arabic' },
-        { name: 'Aalima Naziya Bi', qualification: 'Aalim & B.A', roleOrSubject: 'Teacher | Subject: Persian' },
-        { name: 'Aalima Samiya Bi', qualification: 'Aalim', roleOrSubject: 'Teacher | Subject: Adab' },
-        { name: 'Hafsa Barkati', qualification: 'Aalim (Arabic)', roleOrSubject: 'Teacher | Subject: Urdu' },
-        { name: 'Nargis', qualification: 'B.A (Urdu)', roleOrSubject: 'Teacher | Subject: Arabic' },
-      ],
-    },
-    {
-      name: 'Modern Subjects',
-      teachers: [
-        { name: 'Naseem Jahan', qualification: 'M.A (English, Sociology, Political Science)', roleOrSubject: 'Teacher | Subject: English' },
-        { name: 'Anam Kabeer', qualification: 'M.com (Accounts)', roleOrSubject: 'Teacher | Subject: Mathematics' },
-        { name: 'Shahana', qualification: 'M.A (Political Science)', roleOrSubject: 'Teacher | Subject: Social Science' },
-        { name: 'Shabeena Bi', qualification: 'M.A (Theology)', roleOrSubject: 'Teacher | Subject: General Knowledge' },
-      ],
-    },
-  ],
-},
     'abdul-razzaq-girls-college': {
       institution: 'Abdul Razzaq Girls Inter College',
       institutionUrdu: 'عبدالرزاق گرلز انٹر کالج',
@@ -307,7 +307,7 @@ const TeachingStaff = () => {
         </div>
       </div>
 
-      {/* Cover Image (sirf madarsa-darul-loom ke liye) */}
+      {/* Cover Image */}
       {staff.coverImage && (
         <div className="max-w-7xl mx-auto px-4 -mt-8 relative z-10">
           <img
@@ -345,7 +345,7 @@ const TeachingStaff = () => {
             <p className="text-gray-700">{staff.description}</p>
           </div>
 
-          {/* Leadership Section (sirf madarsa-darul-loom ke liye) */}
+          {/* Leadership Section */}
           {staff.leadership && staff.leadership.length > 0 && (
             <div className="mb-12">
               <h2 className="font-serif text-3xl font-bold text-emerald-deep mb-6 text-center">Leadership</h2>
@@ -403,7 +403,7 @@ const TeachingStaff = () => {
                             <p className="text-gray-500 text-sm mt-1">{teacher.qualification}</p>
                           </div>
                         </div>
-                        <div className="mt-4 bg-white px-4 py-3 rounded-lg border border-gray-100 text-xs font-medium text-emerald-700">
+                        <div className="mt-4 bg-white px-4 py-3 rounded-lg border border-gray-100 text-xs font-medium text-emerald-700 break-words">
                           {teacher.roleOrSubject}
                         </div>
                       </div>

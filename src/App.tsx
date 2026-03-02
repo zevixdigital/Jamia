@@ -14,6 +14,7 @@ import Gallery from './pages/Gallery';
 import Certificates from './pages/Certificates';
 import Contact from './pages/Contact';
 import Donation from './pages/Donation';
+import Accreditations from './pages/Accreditations';
 
 // Institution individual pages
 import PrincipalMessage from './pages/institution/PrincipalMessage';
@@ -65,6 +66,7 @@ function App() {
                 <Route path="/certificates" element={<Certificates />} />
                 <Route path="/contact" element={<Contact />} />
                 <Route path="/donation" element={<Donation />} />
+                <Route path="/accreditations" element={<Accreditations />} />
               </Routes>
             </main>
             <Footer />
