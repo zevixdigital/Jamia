@@ -255,7 +255,7 @@ const Contact = () => {
             <h2 className="section-title text-center mb-8">Department Contacts</h2>
             <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-6">
               {[
-                { dept: 'Admission Office', phone: '+91-9756-733 334', email: 'admission@jamiarazvia.org' },
+                { dept: 'Admission Office', phone: '+91-9756-733 334', email: 'info.jamiarazvia@gmail.com' },
                 { dept: 'Examination Cell', phone: '+91-9756-733 335', email: 'exam@jamiarazvia.org' },
                 { dept: 'Hostel Office', phone: '+91-9756-733 336', email: 'hostel@jamiarazvia.org' },
                 { dept: 'Accounts Office', phone: '+91-9756-733 337', email: 'accounts@jamiarazvia.org' },

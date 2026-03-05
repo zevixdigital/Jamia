@@ -39,7 +39,7 @@ const Header = () => {
       path: "/committee",
       dropdown: [
         { name: "Managing Committee", path: "/committee/managing" },
-        { name: "Advisory Committee", path: "/committee/advisory" },
+        // { name: "Advisory Committee", path: "/committee/advisory" },
       ],
     },
     { name: "Admission", path: "/admission" },

@@ -71,7 +71,7 @@ const Admission = () => {
 
   const forms = [
     {
-      name: 'Admission Form 2025-26',
+      name: 'Admission Form 2026-27',
       size: '427 KB',
       format: 'PDF',
       url: 'https://drive.google.com/uc?export=download&id=1WnzXZvUIacQ8HiuE4jFkt_kbXBcOzOMK',
@@ -89,7 +89,7 @@ const Admission = () => {
           <p className="font-urdu text-gold-light text-xl mb-2">داخلہ</p>
           <h1 className="font-serif text-4xl md:text-5xl font-bold text-white mb-4">Admission</h1>
           <p className="text-white/80 max-w-2xl mx-auto">
-            Begin your journey of knowledge and faith. Admissions are open for the academic year 2025-26.
+            Begin your journey of knowledge and faith. Admissions are open for the academic year 2026-27.
           </p>
         </div>
       </div>
@@ -147,14 +147,14 @@ const Admission = () => {
               <div className="bg-emerald-light/30 rounded-lg p-6 mt-8">
                 <h3 className="font-serif text-xl font-bold text-emerald-deep mb-4 flex items-center gap-2">
                   <Calendar className="w-5 h-5" />
-                  Important Dates for 2025-26
+                  Important Dates for 2026-27
                 </h3>
                 <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-4">
                   {[
-                    { date: '01 Jan 2025', event: 'Admission Opens' },
-                    { date: '31 Mar 2025', event: 'Last Date for Application' },
-                    { date: '10-20 Apr 2025', event: 'Entrance Test' },
-                    { date: '30 Apr 2025', event: 'Results & Admission' },
+                    { date: '01 Jan 2026', event: 'Admission Opens' },
+                    { date: '31 Mar 2026', event: 'Last Date for Application' },
+                    { date: '10-20 Apr 2026', event: 'Entrance Test' },
+                    { date: '30 Apr 2026', event: 'Results & Admission' },
                   ].map((item, index) => (
                     <div key={index} className="bg-white p-4 rounded-lg">
                       <p className="text-gold-primary font-bold">{item.date}</p>
@@ -286,7 +286,7 @@ const Admission = () => {
                 </div>
                 <div>
                   <p className="text-gray-500 text-sm">Email</p>
-                  <p className="text-emerald-deep font-medium">admission@jamiarazvia.org</p>
+                  <p className="text-emerald-deep font-medium">info.jamiarazvia@gmail.com</p>
                 </div>
               </div>
               <div className="flex items-center gap-3">

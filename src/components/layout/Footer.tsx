@@ -26,11 +26,8 @@ const Footer = () => {
           {/* About Column */}
           <div>
             <div className="flex items-center gap-3 mb-4">
-              <div className="w-12 h-12 bg-gold-primary rounded-full flex items-center justify-center">
-                <span className="text-white font-serif font-bold text-xl">JR</span>
-              </div>
               <div>
-                <h3 className="font-serif text-lg">Darul Uloom</h3>
+                <img src="https://res.cloudinary.com/dadqwaqis/image/upload/v1761400851/LOGO_NEW_y2imdz.png" alt="Jamia Logo" className="h-12 w-auto object-contain" />
                 <p className="text-gold-light text-sm font-urdu">جامعہ رضویہ</p>
               </div>
             </div>

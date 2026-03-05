@@ -60,10 +60,10 @@ const Home = () => {
   ];
 
   const notices = [
-    { date: '15 Jan 2025', title: 'Admissions Open for Academic Year 2025-26', category: 'Admission' },
-    { date: '10 Jan 2025', title: 'Annual Examination Schedule Announced', category: 'Examination' },
-    { date: '05 Jan 2025', title: 'Special Lecture Series on Islamic History', category: 'Event' },
-    { date: '01 Jan 2025', title: 'New Library Resources Available', category: 'Notice' },
+    { date: '15 Jan 2026', title: 'Admissions Open for Academic Year 2026-27', category: 'Admission' },
+    { date: '10 Jan 2026', title: 'Annual Examination Schedule Announced', category: 'Examination' },
+    { date: '05 Jan 2026', title: 'Special Lecture Series on Islamic History', category: 'Event' },
+    { date: '01 Jan 2026', title: 'New Library Resources Available', category: 'Notice' },
   ];
 
   useEffect(() => {
@@ -795,7 +795,7 @@ const Home = () => {
           >
             <iframe
               className="absolute top-0 left-0 w-full h-full"
-              src="https://www.youtube.com/embed/CZ34yB7vH_g"
+              src="https://www.youtube.com/embed/L4csGN8nfak?si=oOYaJGmmi4QfUyL2"
               title="Institution Overview"
               frameBorder="0"
               allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
@@ -814,28 +814,40 @@ const Home = () => {
 
       {/* CTA Section */}
       <section className="py-16 bg-emerald-deep pattern-bg">
-        <div className="max-w-4xl mx-auto px-4 text-center">
-          <h2 className="font-serif text-3xl md:text-4xl font-bold text-white mb-4">
-            Admissions Open for 2025-26
-          </h2>
-          <p className="font-urdu text-gold-light text-lg mb-6">داخلہ کھلا ہے ٢٠٢٥-٢٦</p>
-          <p className="text-white/80 mb-8 max-w-2xl mx-auto">
-            Join our prestigious institution and embark on a journey of knowledge, faith, and character building. 
-            Limited seats available for the upcoming academic year.
-          </p>
-          <div className="flex flex-col sm:flex-row gap-4 justify-center">
-            <button 
-              onClick={() => setIsAdmissionPopupOpen(true)}
-              className="btn-gold"
-            >
-              Apply Now
-            </button>
-            <Link to="/contact" className="px-6 py-3 border-2 border-white text-white rounded-md font-medium hover:bg-white hover:text-emerald-deep transition-colors">
-              Contact Us
-            </Link>
-          </div>
-        </div>
-      </section>
+  <div className="max-w-4xl mx-auto px-4 text-center">
+    
+    <h2 className="font-serif text-3xl md:text-4xl font-bold text-white mb-4">
+      Admissions Open for 2026–2027
+    </h2>
+
+    <p className="font-urdu text-gold-light text-lg mb-6">
+      تعلیمی سال ٢٠٢٦–٢٠٢٧ کے لیے داخلے کھل گئے ہیں
+    </p>
+
+    <p className="text-white/80 mb-8 max-w-2xl mx-auto">
+      Join our prestigious institution and embark on a journey of knowledge, faith, and character building.
+      Limited seats available for the upcoming academic year.
+    </p>
+
+    <div className="flex flex-col sm:flex-row gap-4 justify-center">
+      
+      <button
+        onClick={() => setIsAdmissionPopupOpen(true)}
+        className="btn-gold"
+      >
+        Apply Now
+      </button>
+
+      <Link
+        to="/contact"
+        className="px-6 py-3 border-2 border-white text-white rounded-md font-medium hover:bg-white hover:text-emerald-deep transition-colors"
+      >
+        Contact Us
+      </Link>
+
+    </div>
+  </div>
+</section>
 
       {/* Admission Popup */}
       <AdmissionPopup 

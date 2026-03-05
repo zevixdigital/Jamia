@@ -47,7 +47,7 @@ const Downloads = () => {
       link: "/documents/scholarship-form.pdf",
     },
     {
-      name: "Academic Calendar 2025-26",
+      name: "Academic Calendar 2026-27",
       category: "calendar",
       size: "320 KB",
       format: "PDF",
@@ -55,12 +55,20 @@ const Downloads = () => {
       link: "/documents/academic-calendar.pdf",
     },
     {
-      name: "Syllabus - Aalimiyat Section",
+      name: "DUJR Syllabus",
       category: "academic",
-      size: "680 KB",
+      size: "405 KB",
       format: "PDF",
       downloads: 0,
-      link: "/documents/syllabus-aalimiyat.pdf",
+      link: "https://drive.google.com/file/d/10fKltdPgLGbKmZN1KmRuK6rh8GmgD4n3/view?usp=drivesdk",
+    },
+     {
+      name: "Syllabus - Aalimiyat",
+      category: "academic",
+      size: "486 KB",
+      format: "PDF",
+      downloads: 0,
+      link: "https://drive.google.com/file/d/1JafEsV1HfhRJcMXkiLEVPLn0qOrdDgKE/view?usp=drivesdk",
     },
   ];
 

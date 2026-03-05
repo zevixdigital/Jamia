@@ -40,7 +40,7 @@ Jazakumullah Khairan.`,
       institution: 'Madarsa Jannat-ul-Banaat',
       institutionUrdu: 'مدرسہ جنت البنات',
       name: 'Shaista Bi',
-      qualification: 'Fazil-e-Darul Uloom Nadwatul Ulama, M.A. English',
+      qualification: 'M.A. English',
       experience: '20+ years',
       message: `Assalamu Alaikum Warahmatullahi Wabarakatuh,
 

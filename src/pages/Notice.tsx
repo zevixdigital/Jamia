@@ -15,11 +15,11 @@ const Notice = () => {
   const notices = [
     {
       id: 1,
-      title: 'Admissions Open for Academic Year 2025-26',
+      title: 'Admissions Open for Academic Year 2026-27',
       titleUrdu: 'تعلیمی سال ٢٠٢٥-٢٦ کے لیے داخلہ کھلا ہے',
       date: '15 Jan 2025',
       category: 'admission',
-      description: 'Applications are invited for admission to various programs including Diniyat, Hifz, Aalimiyat, and Girls Inter College for the academic year 2025-26.',
+      description: 'Applications are invited for admission to various programs including Diniyat, Hifz, Aalimiyat, and Girls Inter College for the academic year 2026-27.',
       important: true,
     },
     {
